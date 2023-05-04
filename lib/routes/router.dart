@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:portflolio/pages/3D_section.dart';
 import 'package:portflolio/pages/mobile_section.dart';
 import 'package:portflolio/pages/other_section.dart';
-import 'package:portflolio/pages/side_bar.dart';
+import 'package:portflolio/pages/side_bar/side_bar.dart';
 import 'package:portflolio/pages/web_section.dart';
 import 'package:portflolio/routes/route_names.dart';
 
