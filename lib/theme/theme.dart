@@ -29,6 +29,7 @@ abstract class PortfolioTheme {
     );
 
     return ThemeData(
+
       primarySwatch: primarySwatch,
       textTheme: _textTheme,
       toggleButtonsTheme: const ToggleButtonsThemeData(borderRadius: BorderRadius.all(Radius.circular(9))),

@@ -19,16 +19,6 @@ class TabButton extends ConsumerWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 16),
       child: TextButton(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: index == selectedIndex ? Colors.white.withOpacity(0.8) : Colors.black,
-          // set button text color
-          elevation: 5,
-          // add a shadow effect to the button
-          shape: RoundedRectangleBorder(
-            // add rounded borders to the button
-            borderRadius: BorderRadius.circular(10),
-          ),
-        ),
         onPressed: () {
           router.go('/$path');
           ref.read(sideBarIndexProvider.notifier).state = index;
@@ -38,8 +28,8 @@ class TabButton extends ConsumerWidget {
           children: [
             SvgPicture.asset(
               'assets/svg/$svgName.svg',
-              colorFilter: const ColorFilter.mode(
-                Colors.white,
+              colorFilter: ColorFilter.mode(
+                index == selectedIndex ? const Color(0xFFC3DBC5) : const Color(0xFF7EA172),
                 BlendMode.srcIn,
               ),
               height: 30,
