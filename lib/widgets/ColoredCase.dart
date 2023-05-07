@@ -19,7 +19,7 @@ class ColoredCase extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.only(right: 8,bottom: 8,top: 8),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(48),
+          borderRadius: BorderRadius.circular(32),
           color: color,
         ),
         child: Column(
