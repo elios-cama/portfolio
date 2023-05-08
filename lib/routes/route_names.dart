@@ -1,5 +1,6 @@
 class RouteNames {
   static const String home = "/";
+  static const String presentation = "/presentation";
   static const String mobile = "/mobile";
   static const String web = "/web";
   static const String threeD = "/3D";

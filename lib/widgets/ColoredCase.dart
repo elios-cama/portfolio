@@ -14,28 +14,49 @@ class ColoredCase extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      flex: 1,
-      child: Container(
-        margin: const EdgeInsets.only(right: 8,bottom: 8,top: 8),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(32),
-          color: color,
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              number,
-              style: const TextStyle(
-                  color: Colors.white, fontSize: 32, fontWeight: FontWeight.bold, fontFamily: 'Archivo'),
+    return AspectRatio(
+      aspectRatio: .9,
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          return Container(
+            padding: const EdgeInsets.all(4),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(24),
+              color: color,
             ),
-            Text(
-              description,
-              style: const TextStyle(color: Colors.white, fontSize: 14, fontFamily: 'Archivo'),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                FittedBox(
+                  fit: BoxFit.fitWidth, // Scale the text to fit within the available width
+                  child: Text(
+                    number,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Archivo',
+                      fontSize: constraints.maxWidth * 0.2, // Set the font size based on the width of the container
+                    ),
+                  ),
+                ),
+                SizedBox(height: constraints.maxHeight * 0.02), // Add some vertical spacing between the two texts
+                FittedBox(
+                  fit: BoxFit.fitWidth, // Scale the text to fit within the available width
+                  child: Text(
+                    description,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Archivo',
+                      fontSize: constraints.maxWidth * 0.1, // Set the font size based on the width of the container
+                    ),
+                  ),
+                ),
+              ],
             ),
-          ],
-        ),
+          );
+        },
       ),
     );
   }
