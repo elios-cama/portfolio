@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portflolio/widgets/portfolio_carousel.dart';
-import 'package:portflolio/widgets/presentation_page_info.dart';
-import 'package:portflolio/widgets/presentation_page_presentation.dart';
-import 'package:portflolio/widgets/resume_widget.dart';
+import 'package:portflolio/widgets/carousel/portfolio_carousel.dart';
+import 'package:portflolio/widgets/informations/presentation_page_info.dart';
+import 'package:portflolio/widgets/presentation/presentation_page_presentation.dart';
+import 'package:portflolio/widgets/resume/resume_widget.dart';
 
 class PresentationPageM extends StatefulWidget {
   const PresentationPageM({Key? key}) : super(key: key);
@@ -21,7 +21,7 @@ class _PresentationPageMState extends State<PresentationPageM> {
           children: [
             SizedBox(
               width: MediaQuery.of(context).size.width,
-              height: 200,
+              height: 400,
               child: HomePagePresentation(),
             ),
             SizedBox(
@@ -29,7 +29,7 @@ class _PresentationPageMState extends State<PresentationPageM> {
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width,
-              height: 200,
+              height: 400,
               child: HomePageInfo(),
             ),
             SizedBox(
@@ -37,15 +37,15 @@ class _PresentationPageMState extends State<PresentationPageM> {
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width,
-              height: 200,
-              child: PortfolioCarousel(),
+              height: 300,
+              child: const PortfolioCarousel(),
             ),
             SizedBox(
               height: 16,
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width,
-              height: 200,
+              height: 300,
               child: ResumeWidget(),
             ),
             SizedBox(

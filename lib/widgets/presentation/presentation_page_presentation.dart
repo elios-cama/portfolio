@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'ColoredCase.dart';
+import 'package:portflolio/widgets/presentation/ColoredCase.dart';
 
 class HomePagePresentation extends StatelessWidget {
   const HomePagePresentation({

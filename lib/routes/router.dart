@@ -7,7 +7,7 @@ import 'package:portflolio/pages/other_section.dart';
 import 'package:portflolio/pages/web_section.dart';
 import 'package:portflolio/routes/route_names.dart';
 
-import '../pages/presentation_page_d.dart';
+import '../pages/layouts/presentation_page_d.dart';
 
 final GlobalKey<NavigatorState> _navigatorKey = GlobalKey<NavigatorState>();
 

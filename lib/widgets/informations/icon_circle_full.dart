@@ -12,13 +12,16 @@ class IconCircleFull extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      child: SvgPicture.asset(
-        "assets/svg/$path.svg",
-        height: 36,
-        width: 36,
-        colorFilter: const ColorFilter.mode(
-          Colors.white,
-          BlendMode.srcIn,
+      child: FittedBox(
+        fit: BoxFit.contain,
+        child: SvgPicture.asset(
+          "assets/svg/$path.svg",
+          height: 36,
+          width: 36,
+          colorFilter: const ColorFilter.mode(
+            Colors.white,
+            BlendMode.srcIn,
+          ),
         ),
       ),
     );

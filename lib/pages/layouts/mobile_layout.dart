@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portflolio/pages/presentation_page_d.dart';
-import 'package:portflolio/pages/presentation_page_m.dart';
+import 'package:portflolio/pages/layouts/presentation_page_d.dart';
+import 'package:portflolio/pages/layouts/presentation_page_m.dart';
 import 'package:portflolio/pages/side_bar/side_bar.dart';
 
 class MobileLayout extends StatefulWidget {

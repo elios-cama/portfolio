@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portflolio/pages/side_bar/side_bar_provider.dart';
 
-import '../routes/router.dart';
+import '../../routes/router.dart';
 
 class TabButton extends ConsumerWidget {
   const TabButton({super.key, required this.svgName, required this.content, required this.index});

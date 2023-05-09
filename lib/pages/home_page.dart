@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portflolio/pages/layouts/desktop_layout.dart';
-import 'package:portflolio/pages/responsive_layout.dart';
+import 'package:portflolio/pages/layouts/responsive_layout.dart';
 
 import 'layouts/mobile_layout.dart';
 

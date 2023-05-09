@@ -14,14 +14,17 @@ class IconCircle extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(4),
       decoration: BoxDecoration(color: Colors.grey.shade900, shape: BoxShape.circle),
-      child: Center(
-        child: SvgPicture.asset(
-          "assets/svg/$path.svg",
-          height: 32,
-          width: 32,
-          colorFilter: const ColorFilter.mode(
-            Colors.white,
-            BlendMode.srcIn,
+      child: FittedBox(
+        fit: BoxFit.contain,
+        child: Center(
+          child: SvgPicture.asset(
+            "assets/svg/$path.svg",
+            height: 32,
+            width: 32,
+            colorFilter: const ColorFilter.mode(
+              Colors.white,
+              BlendMode.srcIn,
+            ),
           ),
         ),
       ),

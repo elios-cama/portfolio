@@ -15,7 +15,7 @@ class ColoredCase extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: .9,
+      aspectRatio: 1,
       child: LayoutBuilder(
         builder: (context, constraints) {
           return Container(
@@ -28,7 +28,7 @@ class ColoredCase extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 FittedBox(
-                  fit: BoxFit.fitWidth, // Scale the text to fit within the available width
+                  fit: BoxFit.contain, // Scale the text to fit within the available width
                   child: Text(
                     number,
                     textAlign: TextAlign.center,
@@ -42,7 +42,7 @@ class ColoredCase extends StatelessWidget {
                 ),
                 SizedBox(height: constraints.maxHeight * 0.02), // Add some vertical spacing between the two texts
                 FittedBox(
-                  fit: BoxFit.fitWidth, // Scale the text to fit within the available width
+                  fit: BoxFit.contain, // Scale the text to fit within the available width
                   child: Text(
                     description,
                     textAlign: TextAlign.center,

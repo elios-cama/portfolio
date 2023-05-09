@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import '../../widgets/tab_button.dart';
+import '../../widgets/sideBar/tab_button.dart';
 
 class SideBar extends ConsumerWidget {
   const SideBar({

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../widgets/portfolio_carousel.dart';
-import '../widgets/presentation_page_info.dart';
-import '../widgets/presentation_page_presentation.dart';
-import '../widgets/resume_widget.dart';
+import '../../widgets/carousel/portfolio_carousel.dart';
+import '../../widgets/informations/presentation_page_info.dart';
+import '../../widgets/presentation/presentation_page_presentation.dart';
+import '../../widgets/resume/resume_widget.dart';
 
 class PresentationPage extends StatefulWidget {
   const PresentationPage({Key? key}) : super(key: key);
@@ -27,7 +27,7 @@ class _PresentationPageState extends State<PresentationPage> {
               child: Row(
                 children: const [
                   Expanded(
-                    flex: 4,
+                    flex: 5,
                     child: HomePagePresentation(),
                   ),
                   SizedBox(
@@ -47,11 +47,17 @@ class _PresentationPageState extends State<PresentationPage> {
               flex: 2,
               child: Row(
                 children: const [
-                  PortfolioCarousel(),
-                  Spacer(
-                    flex: 1,
+                  Flexible(
+                    flex: 30,
+                    child: PortfolioCarousel(),
                   ),
-                  ResumeWidget(),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  Flexible(
+                    flex: 30,
+                    child: ResumeWidget(),
+                  ),
                 ],
               ),
             )
@@ -61,7 +67,3 @@ class _PresentationPageState extends State<PresentationPage> {
     );
   }
 }
-
-
-
-
