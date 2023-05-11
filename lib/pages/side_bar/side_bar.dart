@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import '../../widgets/sideBar/tab_button.dart';
+import '../../widgets/sideBar/drawer_list_tile.dart';
 
 class SideBar extends ConsumerWidget {
   const SideBar({
@@ -9,43 +9,35 @@ class SideBar extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return Material(
-      child: Container(
-        height: MediaQuery.of(context).size.height,
-        width: 200,
-        color: Colors.black,
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            children: const [
-              TabButton(
-                svgName: 'profile',
-                content: 'A propos de moi',
-                index: 0,
-              ),
-              TabButton(
-                svgName: 'mobile',
-                content: 'Mobile',
-                index: 1,
-              ),
-              TabButton(
-                svgName: 'web',
-                content: 'Web',
-                index: 2,
-              ),
-              TabButton(
-                svgName: '3D',
-                content: '3D',
-                index: 3,
-              ),
-              TabButton(
-                svgName: 'others',
-                content: 'Autres',
-                index: 4,
-              ),
-            ],
+    return Drawer(
+      child: ListView(
+        children: const [
+          DrawerListTile(
+            svgName: 'profile',
+            content: 'A propos de moi',
+            index: 0,
           ),
-        ),
+          DrawerListTile(
+            svgName: 'mobile',
+            content: 'Mobile',
+            index: 1,
+          ),
+          DrawerListTile(
+            svgName: 'web',
+            content: 'Web',
+            index: 2,
+          ),
+          DrawerListTile(
+            svgName: '3D',
+            content: '3D',
+            index: 3,
+          ),
+          DrawerListTile(
+            svgName: 'others',
+            content: 'Autres',
+            index: 4,
+          ),
+        ],
       ),
     );
   }

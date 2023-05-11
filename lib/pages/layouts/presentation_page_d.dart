@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:portflolio/theme/constants.dart';
+
+import '../../responsive.dart';
 import '../../widgets/carousel/portfolio_carousel.dart';
 import '../../widgets/informations/presentation_page_info.dart';
 import '../../widgets/presentation/presentation_page_presentation.dart';
@@ -14,56 +17,53 @@ class PresentationPage extends StatefulWidget {
 class _PresentationPageState extends State<PresentationPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(40), color: Colors.black),
-      child: Center(
-          child: Padding(
-        padding: const EdgeInsets.all(16.0),
+    return SafeArea(
+      child: SingleChildScrollView(
+        primary: false,
+        padding: const EdgeInsets.all(defaultPadding),
         child: Column(
           children: [
-            Flexible(
-              flex: 3,
-              child: Row(
-                children: const [
-                  Expanded(
-                    flex: 5,
-                    child: HomePagePresentation(),
+            Row(
+              children: [
+                Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: const [
+                      HomePagePresentation(),
+                      PortfolioCarousel(),
+                    ],
                   ),
-                  SizedBox(
-                    width: 8,
-                  ),
-                  Expanded(
-                    flex: 5,
-                    child: HomePageInfo(),
-                  )
-                ],
-              ),
-            ),
-            const SizedBox(
-              height: 8,
-            ),
-            Flexible(
-              flex: 2,
-              child: Row(
-                children: const [
-                  Flexible(
-                    flex: 30,
-                    child: PortfolioCarousel(),
-                  ),
+                ),
+                if (Responsive.isDesktop(context))
                   const SizedBox(
-                    width: 8,
+                    width: defaultPadding,
                   ),
-                  Flexible(
-                    flex: 30,
-                    child: ResumeWidget(),
-                  ),
-                ],
+                if (Responsive.isDesktop(context))
+                  Expanded(
+                    flex: 1,
+                    child: Column(
+                      children: const [
+                        HomePageInfo(),
+                        ResumeWidget(),
+                      ],
+                    ),
+                  )
+              ],
+            ),
+            if (Responsive.isMobile(context) || Responsive.isTablet(context))
+              const SizedBox(
+                height: defaultPadding,
               ),
-            )
+            if (Responsive.isMobile(context) || Responsive.isTablet(context))
+              Column(
+                children: const [
+                  HomePageInfo(),
+                  ResumeWidget(),
+                ],
+              )
           ],
         ),
-      )),
+      ),
     );
   }
 }

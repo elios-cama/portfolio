@@ -7,16 +7,15 @@ class PictureWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: 3 / 4,
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(24),
-          color: const Color(0xFF1E1B1E),
-          image: const DecorationImage(
-            image: AssetImage('assets/images/elios.jpg'),
-            fit: BoxFit.cover,
-          ),
+    return Container(
+      width: 100,
+      height: 133,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(24),
+        color: const Color(0xFF1E1B1E),
+        image: const DecorationImage(
+          image: AssetImage('assets/images/elios.jpg'),
+          fit: BoxFit.cover,
         ),
       ),
     );

@@ -16,18 +16,6 @@ class DesktopLayout extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final pageIndex = ref.watch(sideBarIndexProvider);
     const List<Widget> pages = [PresentationPage(), MobileSection(), WebSection(), Section3D(), OtherSection()];
-    return Scaffold(
-      body: Row(
-        children: [
-          const SideBar(),
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: pages[pageIndex],
-            ),
-          ),
-        ],
-      ),
-    );
+    return pages[pageIndex];
   }
 }

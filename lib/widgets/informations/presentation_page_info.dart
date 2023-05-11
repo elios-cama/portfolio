@@ -15,24 +15,18 @@ class HomePageInfo extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        const Flexible(
-          flex: 1,
-          child: NameWidget(),
-        ),
+        const NameWidget(),
         const SizedBox(
           height: 8,
         ),
-        Flexible(
-          flex: 6,
-          child: Row(
-            children: const [
-              PictureWidget(),
-              SizedBox(
-                width: 8,
-              ),
-              InfoColumnWidget()
-            ],
-          ),
+        Row(
+          children: const [
+            PictureWidget(),
+            SizedBox(
+              width: 8,
+            ),
+            InfoColumnWidget()
+          ],
         )
       ],
     );
@@ -46,34 +40,18 @@ class InfoColumnWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Column(
-        children: const [
-          Expanded(
-            flex: 1,
-            child: SchoolNameWidget(),
-          ),
-          SizedBox(
-            height: 8,
-          ),
-          Expanded(
-            flex: 3,
-            child: MapWidget(),
-          ),
-          SizedBox(
-            height: 8,
-          ),
-          Expanded(
-            flex: 1,
-            child: NetworksWidget(),
-          ),
-        ],
-      ),
+    return Column(
+      children: const [
+        SchoolNameWidget(),
+        SizedBox(
+          height: 8,
+        ),
+        MapWidget(),
+        SizedBox(
+          height: 8,
+        ),
+        NetworksWidget(),
+      ],
     );
   }
 }
-
-
-
-
-
