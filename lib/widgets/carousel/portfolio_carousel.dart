@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portflolio/theme/constants.dart';
 import 'package:portflolio/widgets/carousel/portfolio_carousel_image_widget.dart';
 
 class PortfolioCarousel extends StatelessWidget {
@@ -12,7 +13,7 @@ class PortfolioCarousel extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(24),
-          color: const Color(0xFF1E1B1E),
+          color: secondaryColor,
         ),
         child: Column(
           children: [

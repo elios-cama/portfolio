@@ -6,11 +6,13 @@ import 'package:portflolio/pages/side_bar/side_bar_provider.dart';
 import '../../routes/router.dart';
 
 class DrawerListTile extends ConsumerWidget {
-  const DrawerListTile({super.key, required this.svgName, required this.content, required this.index});
+  const DrawerListTile(
+      {super.key, required this.svgName, required this.content, required this.index, required this.path});
 
   final String svgName;
   final String content;
   final int index;
+  final String path;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -18,6 +20,7 @@ class DrawerListTile extends ConsumerWidget {
     return ListTile(
       onTap: () {
         ref.read(sideBarIndexProvider.notifier).state = index;
+        router.go('/$path');
       },
       horizontalTitleGap: 0.0,
       leading: SvgPicture.asset(
@@ -27,7 +30,7 @@ class DrawerListTile extends ConsumerWidget {
       ),
       title: Text(
         content,
-        style: const TextStyle(color: Colors.white54),
+        style: TextStyle(color: index == selectedIndex ? Colors.blue.shade800 : Colors.white54),
       ),
     );
   }

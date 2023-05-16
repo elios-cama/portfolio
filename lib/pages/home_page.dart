@@ -1,31 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:portflolio/pages/layouts/desktop_layout.dart';
-import 'package:portflolio/pages/side_bar/side_bar.dart';
-
-import '../responsive.dart';
+import 'layout/responsive_layout_widget.dart';
+import 'layouts/home_page/desktop_grid_widget.dart';
+import 'layouts/home_page/mobile_list_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: const SideBar(),
+    return const Scaffold(
       body: SafeArea(
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            if (Responsive.isDesktop(context)|| Responsive.isTablet(context))
-              const Expanded(
-                child: SideBar(),
-              ),
-            const Expanded(
-              flex: 5,
-              child: DesktopLayout(),
-            ),
-          ],
-        ),
+        child: ResponsiveLayoutWidget(mobileWidget: MobileListWidget(),desktopWidget: DesktopGridWidget(),),
       ),
     );
   }
 }
+
+
+
+
+
+
