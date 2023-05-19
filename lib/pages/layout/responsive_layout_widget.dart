@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../responsive.dart';
-import '../../theme/constants.dart';
 import '../side_bar/side_bar.dart';
 
 class ResponsiveLayoutWidget extends StatelessWidget {

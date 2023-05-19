@@ -16,24 +16,14 @@ class SideBar extends ConsumerWidget {
       child: ListView(
         children: [
           DrawerHeader(
-              child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              const Spacer(),
-              FittedBox(
+            child: CircleAvatar(radius: (80),
+                backgroundColor: Colors.transparent,
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(18.0),
-                  child: Image.asset(
-                    'assets/images/donut.png',
-                    width: 100,
-                    height: 130,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              const Spacer(),
-            ],
-          )),
+                  borderRadius:BorderRadius.circular(18),
+                  child: Image.asset("assets/images/elios.jpg", fit: BoxFit.fill,),
+                )
+            )
+          ),
           const DrawerListTile(
             svgName: 'profile',
             content: 'A propos de moi',

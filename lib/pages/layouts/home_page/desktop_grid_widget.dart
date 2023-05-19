@@ -13,16 +13,16 @@ class DesktopGridWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return const Expanded(
       flex: 5,
       child: Padding(
-        padding: const EdgeInsets.all(defaultPadding),
+        padding: EdgeInsets.all(defaultPadding),
         child: Row(
           children: [
             Flexible(
               flex: 1,
               child: Column(
-                children: const [
+                children: [
                   Expanded(
                     flex: 3,
                     child: HomePagePresentation(),
@@ -37,13 +37,13 @@ class DesktopGridWidget extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(
+            SizedBox(
               width: defaultPadding,
             ),
             Flexible(
               flex: 1,
               child: Column(
-                children: const [
+                children: [
                   Expanded(flex: 4,child: HomePageInfo(),),
                   SizedBox(
                     height: defaultPadding,

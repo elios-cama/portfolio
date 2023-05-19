@@ -13,14 +13,18 @@ class MobileListWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return const Expanded(
       flex: 5,
       child: Padding(
-        padding: const EdgeInsets.all(defaultPadding),
+        padding: EdgeInsets.all(defaultPadding),
         child: SingleChildScrollView(
           child: Column(
-            children: const [
-              HomePagePresentation(),
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              SizedBox(
+                child: HomePagePresentation(),
+                height: 400,
+              ),
               SizedBox(
                 height: defaultPadding,
               ),

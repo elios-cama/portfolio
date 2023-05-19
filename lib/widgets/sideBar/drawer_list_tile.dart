@@ -28,9 +28,12 @@ class DrawerListTile extends ConsumerWidget {
         colorFilter: const ColorFilter.mode(Colors.white54, BlendMode.srcIn),
         height: 16,
       ),
-      title: Text(
-        content,
-        style: TextStyle(color: index == selectedIndex ? Colors.blue.shade800 : Colors.white54),
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        child: Text(
+          content,
+          style: TextStyle(color: index == selectedIndex ? Colors.blue.shade800 : Colors.white54),
+        ),
       ),
     );
   }
