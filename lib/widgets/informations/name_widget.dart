@@ -8,14 +8,14 @@ class NameWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(24),
           color: const Color(0xFF1E1B1E),
         ),
-        child: Row(
+        child: const Row(
           mainAxisAlignment: MainAxisAlignment.start,
-          children: const [
+          children: [
             FittedBox(
               fit: BoxFit.scaleDown,
               child: Text(

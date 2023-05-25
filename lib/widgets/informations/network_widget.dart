@@ -16,9 +16,9 @@ class NetworksWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(24),
         color: const Color(0xFF1E1B1E),
       ),
-      child: Row(
+      child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: const [
+        children: [
           IconCircleFull(
             path: 'linkedin',
           ),

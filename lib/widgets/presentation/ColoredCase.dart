@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 class ColoredCase extends StatelessWidget {
@@ -22,16 +23,14 @@ class ColoredCase extends StatelessWidget {
           color: color,
         ),
         child: Center(
-          child: FittedBox(
-            fit: BoxFit.fitHeight,
-            child: Text(
-              '$number\n$description',
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'Archivo',
-              ),
+          child: AutoSizeText(
+            '$number\n$description',
+            textAlign: TextAlign.center,
+            maxLines: 2,
+            style: const TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Archivo',
             ),
           ),
         ),

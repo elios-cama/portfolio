@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -27,13 +28,13 @@ class DrawerListTile extends ConsumerWidget {
         'assets/svg/$svgName.svg',
         colorFilter: const ColorFilter.mode(Colors.white54, BlendMode.srcIn),
         height: 16,
-      ),
-      title: FittedBox(
+        width: 16,
         fit: BoxFit.scaleDown,
-        child: Text(
-          content,
-          style: TextStyle(color: index == selectedIndex ? Colors.blue.shade800 : Colors.white54),
-        ),
+      ),
+      title: AutoSizeText(
+        content,
+        maxLines: 2,
+        style: TextStyle(color: index == selectedIndex ? Colors.blue.shade800 : Colors.white54),
       ),
     );
   }

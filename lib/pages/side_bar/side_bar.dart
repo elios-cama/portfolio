@@ -12,7 +12,6 @@ class SideBar extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final pageIndex = ref.watch(sideBarIndexProvider);
     return Drawer(
-      width: 300,
       child: ListView(
         children: [
           DrawerHeader(

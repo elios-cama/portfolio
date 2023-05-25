@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 class MapWidget extends StatelessWidget {
@@ -8,33 +9,33 @@ class MapWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(24),
-        color: const Color(0xFF1E1B1E),
-      ),
-      child:Column(
-            children: [
-              Row(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(24),
+          color: const Color(0xFF1E1B1E),
+        ),
+        child: Column(
+          children: [
+            Expanded(
+              flex: 1,
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  FittedBox(
-                    child: Text(
-                      "Basé à:",
-                      style: TextStyle(color: Colors.grey.shade700, fontSize: 16),
-                    ),
+                  AutoSizeText(
+                    "Basé à:",
+                    style: TextStyle(color: Colors.grey.shade700, fontSize: 16),
                   ),
-                  FittedBox(
-                    child: Text(
-                      "Belfort",
-                      style: TextStyle(color: Colors.white, fontSize: 16),
-                    ),
+                  AutoSizeText(
+                    "Belfort",
+                    style: TextStyle(color: Colors.white, fontSize: 16),
                   ),
                 ],
               ),
-              const SizedBox(height: 8),
-              Container(
+            ),
+            const SizedBox(height: 8),
+            Expanded(
+              flex: 4,
+              child: Container(
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('assets/images/map.png'),
@@ -42,8 +43,8 @@ class MapWidget extends StatelessWidget {
                   ),
                 ),
               ),
-            ],
-          )
-    );
+            ),
+          ],
+        ));
   }
 }

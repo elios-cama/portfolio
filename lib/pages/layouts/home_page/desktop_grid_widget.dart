@@ -44,11 +44,11 @@ class DesktopGridWidget extends StatelessWidget {
               flex: 1,
               child: Column(
                 children: [
-                  Expanded(flex: 4,child: HomePageInfo(),),
+                  Expanded(flex: 3,child: HomePageInfo(),),
                   SizedBox(
                     height: defaultPadding,
                   ),
-                  Expanded(flex: 4,child: ResumeWidget(),),
+                  Expanded(flex: 2,child: ResumeWidget(),),
                 ],
               ),
             )

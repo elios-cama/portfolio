@@ -19,21 +19,33 @@ class HomePageInfo extends StatelessWidget {
         borderRadius: BorderRadius.circular(24),
         color: secondaryColor,
       ),
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const NameWidget(),
-          const SizedBox(
+          Expanded(
+            flex: 2,
+            child: NameWidget(),
+          ),
+          SizedBox(
             height: 8,
           ),
-          Row(
-            children: const [
-              PictureWidget(),
-              SizedBox(
-                width: 8,
-              ),
-              InfoColumnWidget()
-            ],
+          Expanded(
+            flex: 7,
+            child: Row(
+              children: [
+                Expanded(
+                  flex: 3,
+                  child: PictureWidget(),
+                ),
+                SizedBox(
+                  width: 8,
+                ),
+                Expanded(
+                  flex: 5,
+                  child: InfoColumnWidget(),
+                )
+              ],
+            ),
           )
         ],
       ),
@@ -48,17 +60,26 @@ class InfoColumnWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
-        SchoolNameWidget(),
+    return const Column(
+      children: [
+        Expanded(
+          flex: 1,
+          child: SchoolNameWidget(),
+        ),
         SizedBox(
           height: 8,
         ),
-        MapWidget(),
+        Expanded(
+          flex: 3,
+          child: MapWidget(),
+        ),
         SizedBox(
           height: 8,
         ),
-        NetworksWidget(),
+        Expanded(
+          flex: 1,
+          child: NetworksWidget(),
+        ),
       ],
     );
   }

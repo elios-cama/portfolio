@@ -16,48 +16,54 @@ class PortfolioCarousel extends StatelessWidget {
           color: secondaryColor,
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text(
-                  "Mobile Portfolio",
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.white,
+            Expanded(
+              flex: 1,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    "Mobile Portfolio",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white,
+                    ),
                   ),
-                ),
-                Text(
-                  "Voir tout",
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.grey.shade700,
+                  Text(
+                    "Voir tout",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.grey.shade700,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-            const SizedBox(
-              height: 8,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
-                CarouselImageWidget(
-                  path: 'daymode_carousel',
-                ),
-                SizedBox(
-                  width: 8,
-                ),
-                CarouselImageWidget(
-                  path: 'daymode_carousel',
-                ),
-                SizedBox(
-                  width: 8,
-                ),
-                CarouselImageWidget(
-                  path: 'daymode_carousel',
-                ),
-              ],
+            const Spacer(),
+            const Expanded(
+              flex: 7,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CarouselImageWidget(
+                    path: 'daymode_carousel',
+                  ),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  CarouselImageWidget(
+                    path: 'daymode_carousel',
+                  ),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  CarouselImageWidget(
+                    path: 'daymode_carousel',
+                  ),
+                ],
+              ),
             )
           ],
         ));

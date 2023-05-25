@@ -22,21 +22,27 @@ class MobileListWidget extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               SizedBox(
+                height: 300,
                 child: HomePagePresentation(),
-                height: 400,
               ),
               SizedBox(
                 height: defaultPadding,
               ),
-              HomePageInfo(),
+              SizedBox(
+                height: 300,
+                child: HomePageInfo(),
+              ),
               SizedBox(
                 height: defaultPadding,
               ),
-              PortfolioCarousel(),
+              SizedBox(
+                height: 200,
+                child: PortfolioCarousel(),
+              ),
               SizedBox(
                 height: defaultPadding,
               ),
-              ResumeWidget()
+              SizedBox(height : 200,child: ResumeWidget())
             ],
           ),
         ),
