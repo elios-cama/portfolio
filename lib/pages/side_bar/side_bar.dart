@@ -19,7 +19,7 @@ class SideBar extends ConsumerWidget {
                 backgroundColor: Colors.transparent,
                 child: ClipRRect(
                   borderRadius:BorderRadius.circular(18),
-                  child: Image.asset("assets/images/elios.jpg", fit: BoxFit.fill,),
+                  child: Image.asset("assets/images/elios.png", fit: BoxFit.fill,),
                 )
             )
           ),

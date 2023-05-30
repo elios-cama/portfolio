@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:portflolio/theme/constants.dart';
 import 'package:portflolio/widgets/carousel/portfolio_carousel_image_widget.dart';
 
+import '../../pages/home_page.dart';
+
 class PortfolioCarousel extends StatelessWidget {
   const PortfolioCarousel({
     super.key,

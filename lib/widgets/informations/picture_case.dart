@@ -12,7 +12,7 @@ class PictureWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(24),
         color: const Color(0xFF1E1B1E),
         image: const DecorationImage(
-          image: AssetImage('assets/images/elios.jpg'),
+          image: AssetImage('assets/images/elios.png'),
           fit: BoxFit.cover,
         ),
       ),
