@@ -1,9 +1,7 @@
-import 'package:auto_size_text/auto_size_text.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:portflolio/theme/constants.dart';
 
-
-import '../../../../widgets/mobile/techno_icons_widget.dart';
+import 'mobile_app_desktop_layout_widget.dart';
 
 class DaymodePage extends StatefulWidget {
   const DaymodePage({Key? key}) : super(key: key);
@@ -32,84 +30,16 @@ class _DaymodePageState extends State<DaymodePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          const Spacer(),
-          const Expanded(
-            flex: 4,
-            child: Align(
-              alignment: Alignment.center,
-              child: AutoSizeText(
-                'Daymode',
-                style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
-                overflow: TextOverflow.fade,
-                maxLines: 1,
-              ),
-            ),
-          ),
-          const Spacer(),
-          Expanded(
-            flex: 15,
-            child: Align(
-              alignment: Alignment.center,
-              child: CarouselSlider(
-                options: CarouselOptions(
-                  aspectRatio: 0.7,
-                  enlargeCenterPage: true,
-                  enableInfiniteScroll: false,
-                  initialPage: 0,
-                  autoPlay: false,
-                ),
-                items: imagePaths.map((imagePath) {
-                  return Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 10.0),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20.0),
-                    ),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20.0),
-                      child: Image.asset(
-                        imagePath,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  );
-                }).toList(),
-              ),
-            ),
-          ),
-          const Spacer(),
-          const Expanded(
-            flex: 1,
-            child: AutoSizeText(
-              'Technologies utilisées',
-              style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
-              overflow: TextOverflow.fade,
-              maxLines: 1,
-              textAlign: TextAlign.left,
-              // textAlign: TextAlign.center,
-            ),
-          ),
-          const Spacer(),
-          TechnoIconsWidget(svgIconPaths: svgIconPaths),
-          const Expanded(
-            flex: 1,
-            child: AutoSizeText(
-              'Résumé du projet',
-              style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
-              overflow: TextOverflow.fade,
-              maxLines: 1,
-              textAlign: TextAlign.left,
-              // textAlign: TextAlign.center,
-            ),
-          ),
-          const Spacer(),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(defaultPadding),
+        child: MobileAppDesktopLayoutWidget(
+          imagePaths: imagePaths,
+          svgIconPaths: svgIconPaths,
+          title: 'Daymode',
+          description:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas. Ornare aenean euismod elementum nisi quis. Non quam lacus suspendisse faucibus interdum posuere. Pharetra pharetra massa massa ultricies. Leo in vitae turpis massa sed elementum. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nascetur ridiculus mus mauris vitae ultricies leo integer. A diam sollicitudin tempor id eu nisl nunc mi. Diam quam nulla porttitor massa. Adipiscing enim eu turpis egestas pretium. Dolor sit amet consectetur adipiscing elit duis tristique. Commodo ullamcorper a lacus vestibulum sed. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Netus et malesuada fames ac turpis egestas sed tempus urna. Ac felis donec et odio pellentesque diam.Lacus luctus accumsan tortor posuere ac. Placerat orci nulla pellentesque dignissim enim sit amet. Leo a diam sollicitudin tempor id eu nisl nunc mi. Dolor purus non enim praesent elementum. Vitae tempus quam pellentesque nec nam aliquam sem. Massa ultricies mi quis hendrerit dolor magna eget est. Quis lectus nulla at volutpat diam ut. Enim nunc faucibus a pellentesque. Erat velit scelerisque in dictum. Tempus imperdiet nulla malesuada pellentesque elit. Posuere morbi leo urna molestie at. Eu facilisis sed odio morbi quis commodo. ',
+        ),
       ),
     );
   }
 }
-
-

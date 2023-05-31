@@ -37,7 +37,7 @@ class _DesktopGridWidgetMobileState extends State<DesktopGridWidgetMobile> {
             const Flexible(
               flex: 2,
               child: AutoSizeText(
-                "Quel projet vous intéresse ? ",
+                "Quel projet mobile vous intéresse ? ",
                 style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
                 overflow: TextOverflow.fade,
                 maxLines: 1,
@@ -52,7 +52,7 @@ class _DesktopGridWidgetMobileState extends State<DesktopGridWidgetMobile> {
                   enlargeCenterPage: true,
                   enableInfiniteScroll: false,
                   initialPage: 0,
-                  autoPlay: false,
+                  autoPlay: true,
                   onPageChanged: (index, reason) {
                     setState(() {
                       _currentCardIndex = index;
