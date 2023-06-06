@@ -73,6 +73,16 @@ flutter:
     - assets/svg/
     - assets/images/
     - assets/svg/techno/
+    - assets/images/3D/
+    - assets/images/3D/belfort/
+    - assets/images/3D/halle/
+    - assets/images/3D/salon/
+    - assets/images/mobile/
+    - assets/images/mobile/budgetZero/
+    - assets/images/mobile/daymode/
+    - assets/images/mobile/dreamnote/
+    - assets/images/web/
+    - assets/images/web/musicGrid/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
