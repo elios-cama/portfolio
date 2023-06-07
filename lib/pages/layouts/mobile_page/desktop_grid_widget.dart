@@ -16,11 +16,9 @@ class DesktopGridWidgetMobile extends StatefulWidget {
 
 class _DesktopGridWidgetMobileState extends State<DesktopGridWidgetMobile> {
   final Map<String, String> images = {
-    'assets/images/daymode_carousel.png': 'mobile/daymode',
-    'assets/images/donut.png': 'mobile/dreamnote',
-    'assets/images/elios.png': 'mobile/appsolute',
-    'assets/images/map.png': 'mobile/marmiton',
-    'assets/images/daymode_2.png': 'mobile/budgetzero',
+    'assets/images/mobile/daymode_pres.png': 'mobile/daymode',
+    'assets/images/mobile/dreamnote_pres.png': 'mobile/dreamnote',
+    'assets/images/mobile/budget_zero_pres.png': 'mobile/budgetzero',
   };
   int _currentCardIndex = 0;
 
@@ -48,7 +46,7 @@ class _DesktopGridWidgetMobileState extends State<DesktopGridWidgetMobile> {
               flex: 10,
               child: CarouselSlider(
                 options: CarouselOptions(
-                  aspectRatio: 1.0,
+                  aspectRatio: 1,
                   enlargeCenterPage: true,
                   enableInfiniteScroll: false,
                   initialPage: 0,

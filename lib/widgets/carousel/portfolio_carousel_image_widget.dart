@@ -22,7 +22,7 @@ class CarouselImageWidget extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(24),
             image: DecorationImage(
-              image: AssetImage('assets/images/$path.png'),
+              image: AssetImage('assets/images/mobile/$path'),
               fit: BoxFit.fill,
             ),
           ),

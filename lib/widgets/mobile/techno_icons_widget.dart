@@ -12,14 +12,17 @@ class TechnoIconsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      flex: 1,
+      flex: 2,
       child: Row(
         children: svgIconPaths
-            .map((e) => SvgPicture.asset(
-                  'assets/svg/techno/$e.svg',
-                  height: 40,
-                  width: 40,
-                ))
+            .map((e) => Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: SvgPicture.asset(
+                    'assets/svg/techno/$e.svg',
+                    height: 40,
+                    width: 40,
+                  ),
+            ))
             .toList(),
       ),
     );
