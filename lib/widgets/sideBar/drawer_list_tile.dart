@@ -34,7 +34,7 @@ class DrawerListTile extends ConsumerWidget {
       title: AutoSizeText(
         content,
         maxLines: 2,
-        style: TextStyle(color: index == selectedIndex ? Colors.blue.shade800 : Colors.white54),
+        style: TextStyle(color: index == selectedIndex ? Theme.of(context).colorScheme.primary : Theme.of(context).colorScheme.secondary),
       ),
     );
   }

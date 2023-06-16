@@ -13,7 +13,7 @@ class IconCircle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(4),
-      decoration: BoxDecoration(color: Colors.grey.shade900, shape: BoxShape.circle),
+      decoration: BoxDecoration(color: Theme.of(context).colorScheme.secondary, shape: BoxShape.circle),
       child: FittedBox(
         fit: BoxFit.contain,
         child: Center(

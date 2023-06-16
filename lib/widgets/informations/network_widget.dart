@@ -14,7 +14,7 @@ class NetworksWidget extends StatelessWidget {
       padding: const EdgeInsets.all(4),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(24),
-        color: const Color(0xFF1E1B1E),
+        color: Theme.of(context).colorScheme.secondaryContainer,
       ),
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

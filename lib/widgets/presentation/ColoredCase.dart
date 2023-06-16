@@ -27,8 +27,8 @@ class ColoredCase extends StatelessWidget {
             '$number\n$description',
             textAlign: TextAlign.center,
             maxLines: 2,
-            style: const TextStyle(
-              color: Colors.white,
+            style:  TextStyle(
+              color: Theme.of(context).colorScheme.secondary,
               fontWeight: FontWeight.bold,
               fontFamily: 'Archivo',
             ),

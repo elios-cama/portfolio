@@ -15,7 +15,7 @@ class PortfolioCarousel extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(24),
-          color: secondaryColor,
+          color: Theme.of(context).colorScheme.secondary,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

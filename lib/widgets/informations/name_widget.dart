@@ -11,9 +11,9 @@ class NameWidget extends StatelessWidget {
       padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(24),
-          color: const Color(0xFF1E1B1E),
+          color: Theme.of(context).colorScheme.secondaryContainer,
         ),
-        child: const Row(
+        child:  Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             FittedBox(
@@ -21,7 +21,7 @@ class NameWidget extends StatelessWidget {
               child: Text(
                 'Elios Cama',
                 textAlign: TextAlign.left,
-                style: TextStyle(color: Colors.white, fontSize: 16),
+                style: TextStyle(color: Theme.of(context).colorScheme.secondary, fontSize: 16),
               ),
             ),
           ],

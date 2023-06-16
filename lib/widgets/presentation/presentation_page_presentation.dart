@@ -14,7 +14,7 @@ class HomePagePresentation extends StatelessWidget {
       padding: const EdgeInsets.only(top: 24, left: 16, right: 16, bottom: 24),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(24),
-        color: secondaryColor,
+        color: Theme.of(context).colorScheme.secondary,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -26,11 +26,12 @@ class HomePagePresentation extends StatelessWidget {
               padding: const EdgeInsets.only(top: 24, left: 16, right: 8, bottom: 24),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(24),
-                color: const Color(0xFF1E1B1E),
+                color: Theme.of(context).colorScheme.secondaryContainer,
               ),
-              child: const AutoSizeText(
+              child: AutoSizeText(
                 "Bienvenue sur le portfolio d'Elios Cama",
-                style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
+                style: TextStyle(
+                    color: Theme.of(context).colorScheme.onErrorContainer, fontFamily: 'Archivo', fontSize: 48),
                 maxLines: 10, // Adjust this value based on your requirement
                 overflow: TextOverflow.fade,
                 textAlign: TextAlign.left,
@@ -40,28 +41,28 @@ class HomePagePresentation extends StatelessWidget {
           const SizedBox(
             height: defaultPadding,
           ),
-          const Expanded(
+          Expanded(
             flex: 3,
             child: Row(
               children: [
                 ColoredCase(
-                  color: Color(0xFF00C39A),
+                  color: Theme.of(context).colorScheme.secondaryContainer,
                   number: '6+',
                   description: "années d'expérience",
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 ColoredCase(
-                  color: Color(0xFFFFC03C),
+                  color: Theme.of(context).colorScheme.secondaryContainer,
                   number: '15+',
                   description: "projets scolaires",
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 ColoredCase(
-                  color: Color(0xFFFE6D79),
+                  color: Theme.of(context).colorScheme.secondaryContainer,
                   number: '10+',
                   description: "projets personnels",
                 ),

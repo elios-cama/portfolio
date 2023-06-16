@@ -12,7 +12,7 @@ class MapWidget extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(24),
-          color: const Color(0xFF1E1B1E),
+          color: Theme.of(context).colorScheme.secondaryContainer,
         ),
         child: Column(
           children: [
@@ -23,7 +23,7 @@ class MapWidget extends StatelessWidget {
                 children: [
                   AutoSizeText(
                     "Basé à:",
-                    style: TextStyle(color: Colors.grey.shade700, fontSize: 16),
+                    style: TextStyle(color: Theme.of(context).colorScheme.secondary, fontSize: 16),
                   ),
                   AutoSizeText(
                     "Belfort",

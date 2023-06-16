@@ -21,11 +21,15 @@ class MyApp extends ConsumerWidget {
     return MaterialApp.router(
       title: 'Portfolio',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: bgColor,
-        textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
-            .apply(bodyColor: Colors.white),
-        canvasColor: secondaryColor,
+      // theme: ThemeData.dark().copyWith(
+      //   scaffoldBackgroundColor: bgColor,
+      //   textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
+      //       .apply(bodyColor: Colors.white),
+      //   canvasColor: secondaryColor,
+      // ),
+      theme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: Colors.green
       ),
       routerConfig: router,
     );
