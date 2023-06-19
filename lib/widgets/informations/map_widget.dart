@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:portflolio/theme/constants.dart';
 
 class MapWidget extends StatelessWidget {
   const MapWidget({
@@ -12,7 +13,7 @@ class MapWidget extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(24),
-          color: Theme.of(context).colorScheme.secondaryContainer,
+          color: green_4,
         ),
         child: Column(
           children: [
@@ -36,12 +37,8 @@ class MapWidget extends StatelessWidget {
             Expanded(
               flex: 4,
               child: Container(
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage('assets/images/map.png'),
-                    fit: BoxFit.contain,
-                  ),
-                ),
+                color: green_4,
+                child: Image.asset('assets/images/map.png'),
               ),
             ),
           ],

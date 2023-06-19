@@ -1,27 +1,24 @@
+import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 import '../../../routes/router.dart';
 import '../../../theme/constants.dart';
-
-class DesktopGridWidgetMobile extends StatefulWidget {
-  const DesktopGridWidgetMobile({
-    super.key,
-  });
+class MobileListWidgetMobile extends StatefulWidget {
+  const MobileListWidgetMobile({Key? key}) : super(key: key);
 
   @override
-  State<DesktopGridWidgetMobile> createState() => _DesktopGridWidgetMobileState();
+  State<MobileListWidgetMobile> createState() => _MobileListWidgetMobileState();
 }
 
-class _DesktopGridWidgetMobileState extends State<DesktopGridWidgetMobile> {
+class _MobileListWidgetMobileState extends State<MobileListWidgetMobile> {
   final Map<String, String> images = {
     'assets/images/mobile/daymode_pres.png': 'mobile/daymode',
     'assets/images/mobile/dreamnote_pres.png': 'mobile/dreamnote',
     'assets/images/mobile/budget_zero_pres.png': 'mobile/budgetzero',
   };
   int _currentCardIndex = 0;
-
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -46,7 +43,7 @@ class _DesktopGridWidgetMobileState extends State<DesktopGridWidgetMobile> {
               flex: 10,
               child: CarouselSlider(
                 options: CarouselOptions(
-                  aspectRatio: 1,
+                  aspectRatio: .7,
                   enlargeCenterPage: true,
                   enableInfiniteScroll: false,
                   initialPage: 0,

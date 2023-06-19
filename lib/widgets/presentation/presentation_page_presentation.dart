@@ -14,7 +14,7 @@ class HomePagePresentation extends StatelessWidget {
       padding: const EdgeInsets.only(top: 24, left: 16, right: 16, bottom: 24),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(24),
-        color: Theme.of(context).colorScheme.secondary,
+        color: green_6
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -26,12 +26,12 @@ class HomePagePresentation extends StatelessWidget {
               padding: const EdgeInsets.only(top: 24, left: 16, right: 8, bottom: 24),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(24),
-                color: Theme.of(context).colorScheme.secondaryContainer,
+                color: green_3
               ),
-              child: AutoSizeText(
+              child: const AutoSizeText(
                 "Bienvenue sur le portfolio d'Elios Cama",
                 style: TextStyle(
-                    color: Theme.of(context).colorScheme.onErrorContainer, fontFamily: 'Archivo', fontSize: 48),
+                    color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
                 maxLines: 10, // Adjust this value based on your requirement
                 overflow: TextOverflow.fade,
                 textAlign: TextAlign.left,
@@ -41,28 +41,28 @@ class HomePagePresentation extends StatelessWidget {
           const SizedBox(
             height: defaultPadding,
           ),
-          Expanded(
+          const Expanded(
             flex: 3,
             child: Row(
               children: [
                 ColoredCase(
-                  color: Theme.of(context).colorScheme.secondaryContainer,
+                  color: green_3,
                   number: '6+',
                   description: "années d'expérience",
                 ),
-                const SizedBox(
+                SizedBox(
                   width: 8,
                 ),
                 ColoredCase(
-                  color: Theme.of(context).colorScheme.secondaryContainer,
+                  color:green_4,
                   number: '15+',
                   description: "projets scolaires",
                 ),
-                const SizedBox(
+                SizedBox(
                   width: 8,
                 ),
                 ColoredCase(
-                  color: Theme.of(context).colorScheme.secondaryContainer,
+                  color: green_5,
                   number: '10+',
                   description: "projets personnels",
                 ),

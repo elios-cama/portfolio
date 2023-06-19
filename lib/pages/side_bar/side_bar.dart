@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portflolio/pages/side_bar/side_bar_provider.dart';
+import 'package:portflolio/theme/constants.dart';
 import '../../widgets/sideBar/drawer_list_tile.dart';
 
 class SideBar extends ConsumerWidget {
@@ -12,6 +13,7 @@ class SideBar extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final pageIndex = ref.watch(sideBarIndexProvider);
     return Drawer(
+      backgroundColor: green_2,
       child: ListView(
         children: [
           DrawerHeader(

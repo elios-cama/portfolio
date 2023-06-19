@@ -1,6 +1,8 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
+import '../../theme/constants.dart';
+
 class SchoolNameWidget extends StatelessWidget {
   const SchoolNameWidget({
     super.key,
@@ -12,7 +14,7 @@ class SchoolNameWidget extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(24),
-        color: Theme.of(context).colorScheme.secondaryContainer,
+        color: green_3,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

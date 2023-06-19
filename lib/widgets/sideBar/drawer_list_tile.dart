@@ -5,6 +5,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portflolio/pages/side_bar/side_bar_provider.dart';
 
 import '../../routes/router.dart';
+import '../../theme/constants.dart';
 
 class DrawerListTile extends ConsumerWidget {
   const DrawerListTile(
@@ -26,7 +27,7 @@ class DrawerListTile extends ConsumerWidget {
       horizontalTitleGap: 0.0,
       leading: SvgPicture.asset(
         'assets/svg/$svgName.svg',
-        colorFilter: const ColorFilter.mode(Colors.white54, BlendMode.srcIn),
+        colorFilter: ColorFilter.mode(index == selectedIndex ? Colors.white : green_6, BlendMode.srcIn),
         height: 16,
         width: 16,
         fit: BoxFit.scaleDown,
@@ -34,7 +35,7 @@ class DrawerListTile extends ConsumerWidget {
       title: AutoSizeText(
         content,
         maxLines: 2,
-        style: TextStyle(color: index == selectedIndex ? Theme.of(context).colorScheme.primary : Theme.of(context).colorScheme.secondary),
+        style: TextStyle(color: index == selectedIndex ? Colors.white : green_6),
       ),
     );
   }

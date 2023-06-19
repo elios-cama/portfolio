@@ -13,9 +13,9 @@ class ResumeWidget extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(24),
-        color: Theme.of(context).colorScheme.secondary,
+        color: green_6,
       ),
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -39,11 +39,11 @@ class ResumeWidget extends StatelessWidget {
               ],
             ),
           ),
-          const Spacer(),
+          Spacer(),
           Expanded(
             flex: 7,
             child:  AutoSizeText(
-              'Long Text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+              "Bonjour ! J'ai 22 ans et je suis un étudiant passioné par les nouvelles technologies. Je suis actuellement en Erasmus à Polytechnique Milan et recherche un stage de fin d'études pour le printemps 2024. J'aimerai allier mes connaissances en développement mobile, modélisation 3D et en IA.",
               style: TextStyle(color: Colors.white, fontSize: 22),
               maxLines: 10, // Adjust this value based on your requirement
               overflow: TextOverflow.fade,

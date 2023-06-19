@@ -12,62 +12,64 @@ class PortfolioCarousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(24),
-          color: Theme.of(context).colorScheme.secondary,
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Expanded(
-              flex: 1,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  const Text(
-                    "Mobile Portfolio",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.white,
-                    ),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(24),
+        color: green_6,
+      ),
+      child: const Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Expanded(
+            flex: 1,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Mobile Portfolio",
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white,
                   ),
-                  Text(
-                    "Voir tout",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey.shade700,
-                    ),
+                ),
+                Text(
+                  "Voir tout",
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white,
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-            const Spacer(),
-            const Expanded(
-              flex: 7,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  CarouselImageWidget(
-                    path: 'daymode_logo.png',
-                  ),
-                  SizedBox(
-                    width: 8,
-                  ),
-                  CarouselImageWidget(
-                    path: 'budget_zero_logo.png',
-                  ),
-                  SizedBox(
-                    width: 8,
-                  ),
-                  CarouselImageWidget(
-                    path: 'dreamnote_logo.png',
-                  ),
-                ],
-              ),
-            )
-          ],
-        ));
+          ),
+          Spacer(),
+          Expanded(
+            flex: 7,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                CarouselImageWidget(
+                  path: 'daymode_logo.png',
+                ),
+                SizedBox(
+                  width: 8,
+                ),
+                CarouselImageWidget(
+                  path: 'budget_zero_logo.png',
+                ),
+                SizedBox(
+                  width: 8,
+                ),
+                CarouselImageWidget(
+                  path: 'dreamnote_logo.png',
+                ),
+              ],
+            ),
+          ),
+          const Spacer(),
+        ],
+      ),
+    );
   }
 }

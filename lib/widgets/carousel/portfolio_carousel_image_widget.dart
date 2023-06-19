@@ -13,18 +13,12 @@ class CarouselImageWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: GestureDetector(
-        onTap: () {
-          scaffoldKey.currentState?.openDrawer();
-          print("iub");
-        },
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(24),
-            image: DecorationImage(
-              image: AssetImage('assets/images/mobile/$path'),
-              fit: BoxFit.fill,
-            ),
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(24),
+          image: DecorationImage(
+            image: AssetImage('assets/images/mobile/$path'),
+            fit: BoxFit.fill,
           ),
         ),
       ),

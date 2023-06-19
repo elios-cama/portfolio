@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../theme/constants.dart';
+
 class NameWidget extends StatelessWidget {
   const NameWidget({
     super.key,
@@ -11,9 +13,9 @@ class NameWidget extends StatelessWidget {
       padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(24),
-          color: Theme.of(context).colorScheme.secondaryContainer,
+          color: green_2,
         ),
-        child:  Row(
+        child:  const Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             FittedBox(
@@ -21,7 +23,7 @@ class NameWidget extends StatelessWidget {
               child: Text(
                 'Elios Cama',
                 textAlign: TextAlign.left,
-                style: TextStyle(color: Theme.of(context).colorScheme.secondary, fontSize: 16),
+                style: TextStyle(color: Colors.white, fontSize: 24),
               ),
             ),
           ],

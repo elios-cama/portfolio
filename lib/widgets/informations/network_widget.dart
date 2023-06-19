@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portflolio/theme/constants.dart';
 
 import 'icon_circle.dart';
 import 'icon_circle_full.dart';
@@ -14,7 +15,7 @@ class NetworksWidget extends StatelessWidget {
       padding: const EdgeInsets.all(4),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(24),
-        color: Theme.of(context).colorScheme.secondaryContainer,
+        color: green_2,
       ),
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
