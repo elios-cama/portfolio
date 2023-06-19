@@ -3,21 +3,22 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:portflolio/theme/constants.dart';
 
-import '../../../../widgets/mobile/techno_icons_widget.dart';
+import '../../widgets/mobile/techno_icons_widget.dart';
 
-class MobileAppDesktopLayoutWidget extends StatelessWidget {
-  const MobileAppDesktopLayoutWidget({
+class ProjectDetailPageDesktopLayoutWidget extends StatelessWidget {
+  const ProjectDetailPageDesktopLayoutWidget({
     super.key,
     required this.imagePaths,
     required this.svgIconPaths,
     required this.title,
-    required this.description,
+    required this.description, required this.ratio,
   });
 
   final List<String> imagePaths;
   final List<String> svgIconPaths;
   final String title;
   final String description;
+  final double ratio;
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +36,7 @@ class MobileAppDesktopLayoutWidget extends StatelessWidget {
                 alignment: Alignment.center,
                 child: CarouselSlider(
                   options: CarouselOptions(
-                    aspectRatio: 0.7,
+                    aspectRatio: ratio,
                     enlargeCenterPage: true,
                     enableInfiniteScroll: false,
                     initialPage: 0,

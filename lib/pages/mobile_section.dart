@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portflolio/pages/layouts/home_page/mobile_list_widget.dart';
 import 'package:portflolio/pages/layouts/mobile_page/desktop_grid_widget.dart';
 import 'package:portflolio/pages/side_bar/side_bar.dart';
 

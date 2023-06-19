@@ -4,20 +4,21 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 import '../../../routes/router.dart';
 import '../../../theme/constants.dart';
-class MobileListWidgetMobile extends StatefulWidget {
-  const MobileListWidgetMobile({Key? key}) : super(key: key);
+class DesktopGridWidgetThreeD extends StatefulWidget {
+  const DesktopGridWidgetThreeD({Key? key}) : super(key: key);
 
   @override
-  State<MobileListWidgetMobile> createState() => _MobileListWidgetMobileState();
+  State<DesktopGridWidgetThreeD> createState() => _DesktopGridWidgetThreeDState();
 }
 
-class _MobileListWidgetMobileState extends State<MobileListWidgetMobile> {
+class _DesktopGridWidgetThreeDState extends State<DesktopGridWidgetThreeD> {
   final Map<String, String> images = {
-    'assets/images/mobile/daymode_pres.png': 'mobile/daymode',
-    'assets/images/mobile/dreamnote_pres.png': 'mobile/dreamnote',
-    'assets/images/mobile/budget_zero_pres.png': 'mobile/budgetzero',
+    'assets/images/3D/belfort/belfort_1.png': '3D/belfort',
+    'assets/images/3D/halle/halle_1.png': '3D/halle',
+    'assets/images/3D/salon/salon_1.png': '3D/salon',
   };
   int _currentCardIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -31,7 +32,7 @@ class _MobileListWidgetMobileState extends State<MobileListWidgetMobile> {
             const Flexible(
               flex: 2,
               child: AutoSizeText(
-                "Quel projet mobile vous intéresse ? ",
+                "Quel projet 3D vous intéresse ? ",
                 style: TextStyle(color: green_5, fontFamily: 'Archivo', fontSize: 48),
                 overflow: TextOverflow.fade,
                 maxLines: 1,
@@ -42,7 +43,7 @@ class _MobileListWidgetMobileState extends State<MobileListWidgetMobile> {
               flex: 10,
               child: CarouselSlider(
                 options: CarouselOptions(
-                  aspectRatio: .7,
+                  aspectRatio: 16/9,
                   enlargeCenterPage: true,
                   enableInfiniteScroll: false,
                   initialPage: 0,
@@ -94,7 +95,7 @@ class _MobileListWidgetMobileState extends State<MobileListWidgetMobile> {
                                           color: Colors.white,
                                         ),
                                         child: Text(
-                                          hoveredText.substring("/mobile".length).toUpperCase(),
+                                          hoveredText.substring("/3D".length).toUpperCase(),
                                           style: const TextStyle(
                                             color: Colors.black,
                                             fontSize: 24,
