@@ -4,6 +4,7 @@ import 'package:portflolio/pages/layouts/home_page/desktop_grid_widget.dart';
 import 'package:portflolio/pages/side_bar/side_bar.dart';
 
 import 'layouts/home_page/mobile_list_widget.dart';
+import 'layouts/other/desktop_grid_widget.dart';
 
 class OtherSection extends StatefulWidget {
   const OtherSection({Key? key}) : super(key: key);
@@ -19,8 +20,8 @@ class _OtherSectionState extends State<OtherSection> {
       drawer: SideBar(),
       body: SafeArea(
         child: ResponsiveLayoutWidget(
-          mobileWidget: MobileListWidget(),
-          desktopWidget: DesktopGridWidget(),
+          mobileWidget: DesktopGridWidgetOther(),
+          desktopWidget: DesktopGridWidgetOther(),
         ),
       ),
     );
