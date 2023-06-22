@@ -50,19 +50,22 @@ class PortfolioCarousel extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CarouselImageWidget(
-                  path: 'daymode_logo.png',
+                  image_path: 'daymode_logo.png',
+                  route_path: 'daymode',
                 ),
                 SizedBox(
                   width: 8,
                 ),
                 CarouselImageWidget(
-                  path: 'budget_zero_logo.png',
+                  image_path: 'budget_zero_logo.png',
+                  route_path: 'budgetzero',
                 ),
                 SizedBox(
                   width: 8,
                 ),
                 CarouselImageWidget(
-                  path: 'dreamnote_logo.png',
+                  image_path: 'dreamnote_logo.png',
+                  route_path: 'dreamnote',
                 ),
               ],
             ),
