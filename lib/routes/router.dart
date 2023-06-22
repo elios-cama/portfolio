@@ -10,6 +10,7 @@ import 'package:portflolio/pages/layouts/mobile_page/pages/marmiton_page.dart';
 import 'package:portflolio/pages/layouts/threeD/pages/belfort_page.dart';
 import 'package:portflolio/pages/layouts/threeD/pages/halle_page.dart';
 import 'package:portflolio/pages/layouts/threeD/pages/living_room_page.dart';
+import 'package:portflolio/pages/layouts/web/pages/musicGrid_page.dart';
 import 'package:portflolio/pages/mobile_section.dart';
 import 'package:portflolio/pages/other_section.dart';
 import 'package:portflolio/pages/web_section.dart';
@@ -26,7 +27,9 @@ final router = GoRouter(
       GoRoute(path: RouteNames.dreamnote, builder: (context, state) => const DreamNote()),
       GoRoute(path: RouteNames.budgetzero, builder: (context, state) => const BudgetZeroPage()),
     ]),
-    GoRoute(path: RouteNames.web, builder: (context, state) => const WebSection()),
+    GoRoute(path: RouteNames.web, builder: (context, state) => const WebSection(),routes: [
+      GoRoute(path: RouteNames.musicGrid, builder: (context, state) => const MusicGridPage()),
+    ]),
     GoRoute(path: RouteNames.threeD, builder: (context, state) => const Section3D(),routes: [
       GoRoute(path: RouteNames.belfort, builder: (context, state) => const BelfortPage()),
       GoRoute(path: RouteNames.halle, builder: (context, state) => const HallePage()),
