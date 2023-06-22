@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:portflolio/pages/3D_section.dart';
 import 'package:portflolio/pages/home_page.dart';
-import 'package:portflolio/pages/layouts/mobile_page/pages/appsolute_page.dart';
 import 'package:portflolio/pages/layouts/mobile_page/pages/budgetzero_page.dart';
 import 'package:portflolio/pages/layouts/mobile_page/pages/daymode_page.dart';
 import 'package:portflolio/pages/layouts/mobile_page/pages/dreamnote_page.dart';
-import 'package:portflolio/pages/layouts/mobile_page/pages/marmiton_page.dart';
+import 'package:portflolio/pages/layouts/resume_page.dart';
 import 'package:portflolio/pages/layouts/threeD/pages/belfort_page.dart';
 import 'package:portflolio/pages/layouts/threeD/pages/halle_page.dart';
 import 'package:portflolio/pages/layouts/threeD/pages/living_room_page.dart';
@@ -36,5 +35,6 @@ final router = GoRouter(
       GoRoute(path: RouteNames.salon, builder: (context, state) => const LivingRoomPage()),
     ]),
     GoRoute(path: RouteNames.others, builder: (context, state) => const OtherSection()),
+    GoRoute(path: RouteNames.resume, builder: (context, state) => const ResumePage()),
   ],
 );

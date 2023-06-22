@@ -12,6 +12,7 @@ class RouteNames {
   static const String halle = "halle";
   static const String salon = "salon";
   static const String musicGrid = "musicGrid";
+  static const String resume = "/resume";
 
 
 }
