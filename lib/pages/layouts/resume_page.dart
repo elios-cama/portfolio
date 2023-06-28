@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portflolio/pages/layout/responsive_layout_widget.dart';
 import 'package:portflolio/theme/constants.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
@@ -8,21 +9,50 @@ class ResumePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Scaffold(
-        backgroundColor: green_1,
-        body: Row(
-          children: [
-            const Spacer(
-              flex: 1,
+      child: Container(
+        color: green_1,
+        child: ResponsiveLayoutWidget(
+          mobileWidget: Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(defaultPadding),
+              child: Column(
+                // mainAxisSize: MainAxisSize.min,
+                children: [
+                  Expanded(
+                    child: SfPdfViewer.asset(
+                      'assets/files/resume.pdf',
+                      enableTextSelection: true,
+                      enableDoubleTapZooming: true,
+                    ),
+                  ),
+                ],
+              ),
             ),
-            Flexible(
-              flex: 2,
-              child: SfPdfViewer.asset('assets/files/resume.pdf',enableTextSelection: true,),
+          ),
+          desktopWidget: Expanded(
+            flex: 5,
+            child: Padding(
+              padding: EdgeInsets.all(defaultPadding),
+              child: Row(
+                children: [
+                  const Spacer(
+                    flex: 1,
+                  ),
+                  Flexible(
+                    flex: 2,
+                    child: SfPdfViewer.asset(
+                      'assets/files/resume.pdf',
+                      enableTextSelection: true,
+                      enableDoubleTapZooming: true,
+                    ),
+                  ),
+                  const Spacer(
+                    flex: 1,
+                  ),
+                ],
+              ),
             ),
-            const Spacer(
-              flex: 1,
-            ),
-          ],
+          ),
         ),
       ),
     );
