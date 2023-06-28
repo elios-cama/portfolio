@@ -13,7 +13,7 @@ class DesktopGridWidgetWeb extends StatefulWidget {
 
 class _DesktopGridWidgetWeb extends State<DesktopGridWidgetWeb> {
   final Map<String, String> images = {
-    'assets/images/web/musicGrid/music_grid_4.png': 'web/musicGrid',
+    'assets/images/web/musicGrid/music_grid_5.png': 'web/musicGrid',
   };
   int _currentCardIndex = 0;
 
