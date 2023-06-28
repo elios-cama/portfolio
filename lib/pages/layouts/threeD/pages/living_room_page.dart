@@ -36,7 +36,7 @@ class _LivingRoom extends State<LivingRoomPage> {
             ratio: 1.2,
             title: 'Le salon',
             description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas. Ornare aenean euismod elementum nisi quis. Non quam lacus suspendisse faucibus interdum posuere. Pharetra pharetra massa massa ultricies. Leo in vitae turpis massa sed elementum. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nascetur ridiculus mus mauris vitae ultricies leo integer. A diam sollicitudin tempor id eu nisl nunc mi. Diam quam nulla porttitor massa. Adipiscing enim eu turpis egestas pretium. Dolor sit amet consectetur adipiscing elit  ',
+                "Le projet du salon est un projet scolaire dans le cadre de mon master Mondes virtuels. Le but était de modéliser un salon simple avec Blender. J'ai donc créer une jolie pièce à vivre avec une table, de la vaisselle et des fruits. J'ai aussi modélisé un coin salon avec un canapé, un tapis et des plantes. J'ai travaillé les matériaux, les textures et les lumières afin d'avoir un rendu le plus réaliste possible. ",
           ),
           desktopWidget: ProjectDetailPageListLayoutWidget(
             imagePaths: imagePaths,
@@ -44,7 +44,7 @@ class _LivingRoom extends State<LivingRoomPage> {
             title: 'Le salon',
             ratio: 16 / 9,
             description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas. Ornare aenean euismod elementum nisi quis. Non quam lacus suspendisse faucibus interdum posuere. Pharetra pharetra massa massa ultricies. Leo in vitae turpis massa sed elementum. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nascetur ridiculus mus mauris vitae ultricies leo integer. A diam sollicitudin tempor id eu nisl nunc mi. Diam quam nulla porttitor massa. Adipiscing enim eu turpis egestas pretium. Dolor sit amet consectetur adipiscing elit  ',
+                "Le projet du salon est un projet scolaire dans le cadre de mon master Mondes virtuels. Le but était de modéliser un salon simple avec Blender. J'ai donc créer une jolie pièce à vivre avec une table, de la vaisselle et des fruits. J'ai aussi modélisé un coin salon avec un canapé, un tapis et des plantes. J'ai travaillé les matériaux, les textures et les lumières afin d'avoir un rendu le plus réaliste possible. ",
           ),
         ),
       ),

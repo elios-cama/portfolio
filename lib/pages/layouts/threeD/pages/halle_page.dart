@@ -24,9 +24,10 @@ class _HallePage extends State<HallePage> {
   final List<String> svgIconPaths = [
     'blender',
   ];
+
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: green_3,
       body: SafeArea(
         child: ResponsiveLayoutWidget(
@@ -35,16 +36,15 @@ class _HallePage extends State<HallePage> {
             svgIconPaths: svgIconPaths,
             ratio: 1.2,
             title: 'Halle Caoutchouc',
-            description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas. Ornare aenean euismod elementum nisi quis. Non quam lacus suspendisse faucibus interdum posuere. Pharetra pharetra massa massa ultricies. Leo in vitae turpis massa sed elementum. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nascetur ridiculus mus mauris vitae ultricies leo integer. A diam sollicitudin tempor id eu nisl nunc mi. Diam quam nulla porttitor massa. Adipiscing enim eu turpis egestas pretium. Dolor sit amet consectetur adipiscing elit  ',
+            description: "Dans le cadre d'un projet scolaire sur le patrimoine industriel en France, j'ai proposé une maquette 3D du bâtiment que j'étudiais avec un projet de réhabilitation. J'ai tout d'abord modélisé la Halle Caoutchouc avec son architecture réelle, puis ajouter des extensions correspondant à mon projet de réhabilitation. Le travail est fait avec Blender. ",
           ),
           desktopWidget: ProjectDetailPageListLayoutWidget(
             imagePaths: imagePaths,
             svgIconPaths: svgIconPaths,
             title: 'Halle Caoutchouc',
-            ratio: 16/9,
+            ratio: 16 / 9,
             description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas. Ornare aenean euismod elementum nisi quis. Non quam lacus suspendisse faucibus interdum posuere. Pharetra pharetra massa massa ultricies. Leo in vitae turpis massa sed elementum. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nascetur ridiculus mus mauris vitae ultricies leo integer. A diam sollicitudin tempor id eu nisl nunc mi. Diam quam nulla porttitor massa. Adipiscing enim eu turpis egestas pretium. Dolor sit amet consectetur adipiscing elit  ',
+                "Dans le cadre d'un projet scolaire sur le patrimoine industriel en France, j'ai proposé une maquette 3D du bâtiment que j'étudiais avec un projet de réhabilitation. J'ai tout d'abord modélisé la Halle Caoutchouc avec son architecture réelle, puis ajouter des extensions correspondant à mon projet de réhabilitation. Le travail est fait avec Blender. ",
           ),
         ),
       ),

@@ -33,21 +33,19 @@ class _BudgetZeroPage extends State<BudgetZeroPage> {
       body: SafeArea(
         child: ResponsiveLayoutWidget(
           mobileWidget: ProjectDetailPageMobileLayoutWidget(
-            imagePaths: imagePaths,
-            svgIconPaths: svgIconPaths,
-            title: 'BudgetZero',
-            ratio: .7,
-            description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas. Ornare aenean euismod elementum nisi quis. Non quam lacus suspendisse faucibus interdum posuere. Pharetra pharetra massa massa ultricies. Leo in vitae turpis massa sed elementum. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nascetur ridiculus mus mauris vitae ultricies leo integer. A diam sollicitudin tempor id eu nisl nunc mi. Diam quam nulla porttitor massa. Adipiscing enim eu turpis egestas pretium. Dolor sit amet consectetur adipiscing elit  ',
-          ),
+              imagePaths: imagePaths,
+              svgIconPaths: svgIconPaths,
+              title: 'BudgetZero',
+              ratio: .7,
+              description:
+                  "Budget Zero est un projet d'application Android dans le cadre d'un projet scolaire. L'application a été développé à deux avec Kotlin. Nous avons réaliser le design UI/UX avec l'outil gratuit Penpot puis l'avons ensuite implémeneter dans l'app. Le principe est de définir un budget pour toutes ses dépenses du mois sous forme de catégories afin d'arriver à zéro euro à la fin. L'application permet d'avoir plusieurs comptes, d'enregister ses dépenses, de les visualiser et de regarder les historiques des mois précédents. "),
           desktopWidget: ProjectDetailPageDesktopLayoutWidget(
-            imagePaths: imagePaths,
-            svgIconPaths: svgIconPaths,
-            title: 'BudgetZero',
-            ratio: .7,
-            description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas. Ornare aenean euismod elementum nisi quis. Non quam lacus suspendisse faucibus interdum posuere. Pharetra pharetra massa massa ultricies. Leo in vitae turpis massa sed elementum. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nascetur ridiculus mus mauris vitae ultricies leo integer. A diam sollicitudin tempor id eu nisl nunc mi. Diam quam nulla porttitor massa. Adipiscing enim eu turpis egestas pretium. Dolor sit amet consectetur adipiscing elit  ',
-          ),
+              imagePaths: imagePaths,
+              svgIconPaths: svgIconPaths,
+              title: 'BudgetZero',
+              ratio: .7,
+              description:
+                  "Budget Zero est un projet d'application Android dans le cadre d'un projet scolaire. L'application a été développé à deux avec Kotlin. Nous avons réaliser le design UI/UX avec l'outil gratuit Penpot puis l'avons ensuite implémeneter dans l'app. Le principe est de définir un budget pour toutes ses dépenses du mois sous forme de catégories afin d'arriver à zéro euro à la fin. L'application permet d'avoir plusieurs comptes, d'enregister ses dépenses, de les visualiser et de regarder les historiques des mois précédents. "),
         ),
       ),
     );

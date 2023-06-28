@@ -36,21 +36,19 @@ class _DreamNoteState extends State<DreamNote> {
       body: SafeArea(
         child: ResponsiveLayoutWidget(
           mobileWidget: ProjectDetailPageMobileLayoutWidget(
-            imagePaths: imagePaths,
-            svgIconPaths: svgIconPaths,
-            ratio: .7,
-            title: 'Dreamnote',
-            description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas. Ornare aenean euismod elementum nisi quis. Non quam lacus suspendisse faucibus interdum posuere. Pharetra pharetra massa massa ultricies. Leo in vitae turpis massa sed elementum. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nascetur ridiculus mus mauris vitae ultricies leo integer. A diam sollicitudin tempor id eu nisl nunc mi. Diam quam nulla porttitor massa. Adipiscing enim eu turpis egestas pretium. Dolor sit amet consectetur adipiscing elit  ',
-          ),
+              imagePaths: imagePaths,
+              svgIconPaths: svgIconPaths,
+              ratio: .7,
+              title: 'Dreamnote',
+              description:
+                  "Dreamote est un projet personnel. C'est une application qui sert à noter ses rêves. Je me suis intéréssé à la mémorisation des rêves et à ses techniques et j'ai donc développé une app me permettant de les écrire et de les analyser. On peut en effet écrire ses rêves facilement, les modifier ainsi que les personnaliser. J'ai travaillé avec un designer UI/UX en free-lance. On peut aussi afficher des statistiques. La base de données est en local sur le stockage du téléphone."),
           desktopWidget: ProjectDetailPageDesktopLayoutWidget(
-            imagePaths: imagePaths,
-            svgIconPaths: svgIconPaths,
-            ratio: .7,
-            title: 'Dreamnote',
-            description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas. Ornare aenean euismod elementum nisi quis. Non quam lacus suspendisse faucibus interdum posuere. Pharetra pharetra massa massa ultricies. Leo in vitae turpis massa sed elementum. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nascetur ridiculus mus mauris vitae ultricies leo integer. A diam sollicitudin tempor id eu nisl nunc mi. Diam quam nulla porttitor massa. Adipiscing enim eu turpis egestas pretium. Dolor sit amet consectetur adipiscing elit  ',
-          ),
+              imagePaths: imagePaths,
+              svgIconPaths: svgIconPaths,
+              ratio: .7,
+              title: 'Dreamnote',
+              description:
+                  "Dreamote est un projet personnel. C'est une application qui sert à noter ses rếves. Je me suis intéréssé à la mémorisation des rêves et à ses techniques et j'ai donc développé une app me permettant de les écrire et de les analyser. On peut en effet écrire ses rêves facilement, les modifier ainsi que les personnaliser. J'ai travaillé avec un designer UI/UX en free-lance. On peut aussi afficher des statistiques. La base de données est en local sur le stockage du téléphone."),
         ),
       ),
     );

@@ -28,28 +28,27 @@ class _MusicGridPage extends State<MusicGridPage> {
     'git',
     'deezer',
   ];
+
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: green_3,
       body: SafeArea(
         child: ResponsiveLayoutWidget(
           mobileWidget: ProjectDetailPageMobileLayoutWidget(
-            imagePaths: imagePaths,
-            svgIconPaths: svgIconPaths,
-            ratio: 21/9,
-            title: 'Music Grid',
-            description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas. Ornare aenean euismod elementum nisi quis. Non quam lacus suspendisse faucibus interdum posuere. Pharetra pharetra massa massa ultricies. Leo in vitae turpis massa sed elementum. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nascetur ridiculus mus mauris vitae ultricies leo integer. A diam sollicitudin tempor id eu nisl nunc mi. Diam quam nulla porttitor massa. Adipiscing enim eu turpis egestas pretium. Dolor sit amet consectetur adipiscing elit  ',
-          ),
+              imagePaths: imagePaths,
+              svgIconPaths: svgIconPaths,
+              ratio: 21 / 9,
+              title: 'Music Grid',
+              description:
+                  "Music Grid est un projet personnel à l'initiative d'une discussion avec mon frère. Passionés de musique nous voulions avoir un accès aux statistiques de ce que nous écoutions. J'ai donc développer un projet web avec Django. Le site permet à l'utilisateur de se connecter à l'API de Deezer et ensuite de générer une grille des 25 pochettes d'albums les plus écoutés. "),
           desktopWidget: ProjectDetailPageListLayoutWidget(
-            imagePaths: imagePaths,
-            svgIconPaths: svgIconPaths,
-            title: 'Music Grid',
-            ratio: 21/9,
-            description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas. Ornare aenean euismod elementum nisi quis. Non quam lacus suspendisse faucibus interdum posuere. Pharetra pharetra massa massa ultricies. Leo in vitae turpis massa sed elementum. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nascetur ridiculus mus mauris vitae ultricies leo integer. A diam sollicitudin tempor id eu nisl nunc mi. Diam quam nulla porttitor massa. Adipiscing enim eu turpis egestas pretium. Dolor sit amet consectetur adipiscing elit  ',
-          ),
+              imagePaths: imagePaths,
+              svgIconPaths: svgIconPaths,
+              title: 'Music Grid',
+              ratio: 21 / 9,
+              description:
+                  "Music Grid est un projet personnel à l'initiative d'une discussion avec mon frère. Passionés de musique nous voulions avoir un accès aux statistiques de ce que nous écoutions. J'ai donc développer un projet web avec Django. Le site permet à l'utilisateur de se connecter à l'API de Deezer et ensuite de générer une grille des 25 pochettes d'albums les plus écoutés. "),
         ),
       ),
     );

@@ -27,31 +27,22 @@ class _BelfortPageState extends State<BelfortPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: green_3,
-      // appBar: AppBar(
-      //   backgroundColor: green_3,
-      //   leading: IconButton(
-      //     onPressed: () => router.go('/3D'),
-      //     icon: const Icon(Icons.arrow_back,color: Colors.white,),
-      //   ),
-      // ),
       body: SafeArea(
         child: ResponsiveLayoutWidget(
           mobileWidget: ProjectDetailPageMobileLayoutWidget(
-            imagePaths: imagePaths,
-            svgIconPaths: svgIconPaths,
-            ratio: 1.2,
-            title: 'Belfort',
-            description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas. Ornare aenean euismod elementum nisi quis. Non quam lacus suspendisse faucibus interdum posuere. Pharetra pharetra massa massa ultricies. Leo in vitae turpis massa sed elementum. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nascetur ridiculus mus mauris vitae ultricies leo integer. A diam sollicitudin tempor id eu nisl nunc mi. Diam quam nulla porttitor massa. Adipiscing enim eu turpis egestas pretium. Dolor sit amet consectetur adipiscing elit  ',
-          ),
+              imagePaths: imagePaths,
+              svgIconPaths: svgIconPaths,
+              ratio: 1.2,
+              title: 'Belfort',
+              description:
+                  "Dans le cadre d'un projet scolaire dans un groupe de trois, j'ai réalisé la carte en 3D de la zone de l'UTBM. Le but du projet était de réaliser un simulateur immersif de trajet en vélo dans Belfort avec son trafic. Nous avons donc réaliser une application en réalité virtuelle dans la zone de notre école avec une gestion de trafic et de météo. La carte a été réalisée avec Blender en respectant les mesures, les formes des bâtiments ainsi que les textures réelles. "),
           desktopWidget: ProjectDetailPageListLayoutWidget(
-            imagePaths: imagePaths,
-            svgIconPaths: svgIconPaths,
-            ratio: 16 / 9,
-            title: 'Belfort',
-            description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas. Ornare aenean euismod elementum nisi quis. Non quam lacus suspendisse faucibus interdum posuere. Pharetra pharetra massa massa ultricies. Leo in vitae turpis massa sed elementum. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nascetur ridiculus mus mauris vitae ultricies leo integer. A diam sollicitudin tempor id eu nisl nunc mi. Diam quam nulla porttitor massa. Adipiscing enim eu turpis egestas pretium. Dolor sit amet consectetur adipiscing elit  ',
-          ),
+              imagePaths: imagePaths,
+              svgIconPaths: svgIconPaths,
+              ratio: 16 / 9,
+              title: 'Belfort',
+              description:
+                  "Dans le cadre d'un projet scolaire dans un groupe de trois, j'ai réalisé la carte en 3D de la zone de l'UTBM. Le but du projet était de réaliser un simulateur immersif de trajet en vélo dans Belfort avec son trafic. Nous avons donc réaliser une application en réalité virtuelle dans la zone de notre école avec une gestion de trafic et de météo. La carte a été réalisée avec Blender en respectant les mesures, les formes des bâtiments ainsi que les textures réelles. "),
         ),
       ),
     );

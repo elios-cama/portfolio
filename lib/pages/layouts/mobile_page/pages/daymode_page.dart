@@ -42,21 +42,19 @@ class _DaymodePageState extends State<DaymodePage> {
       body: SafeArea(
         child: ResponsiveLayoutWidget(
           mobileWidget: ProjectDetailPageMobileLayoutWidget(
-            imagePaths: imagePaths,
-            svgIconPaths: svgIconPaths,
-            title: 'Daymode',
-            ratio: .7,
-            description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas. Ornare aenean euismod elementum nisi quis. Non quam lacus suspendisse faucibus interdum posuere. Pharetra pharetra massa massa ultricies. Leo in vitae turpis massa sed elementum. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nascetur ridiculus mus mauris vitae ultricies leo integer. A diam sollicitudin tempor id eu nisl nunc mi. Diam quam nulla porttitor massa. Adipiscing enim eu turpis egestas pretium. Dolor sit amet consectetur adipiscing elit  ',
-          ),
+              imagePaths: imagePaths,
+              svgIconPaths: svgIconPaths,
+              title: 'Daymode',
+              ratio: .7,
+              description:
+                  "J'ai réalisé mon stage de master 1 chez Daymode, une start-up de cinq personnes située à Lyon. Daymode est une application de dressing virtuel et d'essayage de vêtements en 3D. J'ai développé avec le CTO la nouvelle version de l'application. J'ai utilisé Unity pour gérer les scripts de rendus de l'application et aussi Blender pour retoucher des objets. A la fin de mon stage j'ai développé un réseau GAN à l'aide de Tensorflow afin de faire de la suggestion de tenues. C'était un travail en étroite collaboration avec le CTO. "),
           desktopWidget: ProjectDetailPageDesktopLayoutWidget(
-            imagePaths: imagePaths,
-            svgIconPaths: svgIconPaths,
-            title: 'Daymode',
-            ratio: .7,
-            description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas. Ornare aenean euismod elementum nisi quis. Non quam lacus suspendisse faucibus interdum posuere. Pharetra pharetra massa massa ultricies. Leo in vitae turpis massa sed elementum. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nascetur ridiculus mus mauris vitae ultricies leo integer. A diam sollicitudin tempor id eu nisl nunc mi. Diam quam nulla porttitor massa. Adipiscing enim eu turpis egestas pretium. Dolor sit amet consectetur adipiscing elit  ',
-          ),
+              imagePaths: imagePaths,
+              svgIconPaths: svgIconPaths,
+              title: 'Daymode',
+              ratio: .7,
+              description:
+                  "J'ai réalisé mon stage de master 1 chez Daymode, une start-up de cinq personnes située à Lyon. Daymode est une application de dressing virtuel et d'essayage de vêtements en 3D. J'ai développé avec le CTO la nouvelle version de l'application. J'ai utilisé Unity pour gérer les scripts de rendus de l'application et aussi Blender pour retoucher des objets. A la fin de mon stage j'ai développé un réseau GAN à l'aide de Tensorflow afin de faire de la suggestion de tenues. C'était un travail en étroite collaboration avec le CTO. "),
         ),
       ),
     );
