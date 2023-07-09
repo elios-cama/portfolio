@@ -4,6 +4,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 import '../../../routes/router.dart';
 import '../../../theme/constants.dart';
+
 class MobileListWidgetMobile extends StatefulWidget {
   const MobileListWidgetMobile({Key? key}) : super(key: key);
 
@@ -18,6 +19,7 @@ class _MobileListWidgetMobileState extends State<MobileListWidgetMobile> {
     'assets/images/mobile/budget_zero_pres.png': 'mobile/budgetzero',
   };
   int _currentCardIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -28,11 +30,11 @@ class _MobileListWidgetMobileState extends State<MobileListWidgetMobile> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Flexible(
+            Flexible(
               flex: 2,
               child: AutoSizeText(
                 "Quel projet mobile vous intéresse ? ",
-                style: TextStyle(color: green_5, fontFamily: 'Archivo', fontSize: 48),
+                style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Archivo', fontSize: 48),
                 overflow: TextOverflow.fade,
                 maxLines: 1,
                 textAlign: TextAlign.center,

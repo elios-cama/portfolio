@@ -17,7 +17,7 @@ class HomePageInfo extends StatelessWidget {
       padding: const EdgeInsets.only(top: 24, left: 16, right: 8, bottom: 24),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(24),
-        color: green_6,
+        color: Theme.of(context).colorScheme.primary,
       ),
       child: const Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,

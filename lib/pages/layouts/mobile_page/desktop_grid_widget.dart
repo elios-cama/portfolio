@@ -32,11 +32,11 @@ class _DesktopGridWidgetMobileState extends State<DesktopGridWidgetMobile> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Flexible(
+            Flexible(
               flex: 2,
               child: AutoSizeText(
                 "Quel projet mobile vous intéresse ? ",
-                style: TextStyle(color: green_5, fontFamily: 'Archivo', fontSize: 48),
+                style: TextStyle(color: Theme.of(context).colorScheme.secondary, fontFamily: 'Archivo', fontSize: 48),
                 overflow: TextOverflow.fade,
                 maxLines: 1,
                 textAlign: TextAlign.center,

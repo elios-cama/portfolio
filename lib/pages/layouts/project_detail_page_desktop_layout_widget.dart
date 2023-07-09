@@ -11,7 +11,8 @@ class ProjectDetailPageDesktopLayoutWidget extends StatelessWidget {
     required this.imagePaths,
     required this.svgIconPaths,
     required this.title,
-    required this.description, required this.ratio,
+    required this.description,
+    required this.ratio,
   });
 
   final List<String> imagePaths;
@@ -80,11 +81,12 @@ class ProjectDetailPageDesktopLayoutWidget extends StatelessWidget {
                       ),
                     ),
                     const Spacer(),
-                    const Expanded(
+                    Expanded(
                       flex: 1,
                       child: AutoSizeText(
                         'Technologies utilisées',
-                        style: TextStyle(color: green_6, fontFamily: 'Archivo', fontSize: 48),
+                        style: TextStyle(
+                            color: Theme.of(context).colorScheme.primary, fontFamily: 'Archivo', fontSize: 48),
                         overflow: TextOverflow.fade,
                         maxLines: 1,
                         textAlign: TextAlign.left,
@@ -94,11 +96,12 @@ class ProjectDetailPageDesktopLayoutWidget extends StatelessWidget {
                     const Spacer(),
                     TechnoIconsWidget(svgIconPaths: svgIconPaths),
                     const Spacer(),
-                    const Expanded(
+                    Expanded(
                       flex: 1,
                       child: AutoSizeText(
                         'Résumé du projet',
-                        style: TextStyle(color: green_6, fontFamily: 'Archivo', fontSize: 48),
+                        style: TextStyle(
+                            color: Theme.of(context).colorScheme.primary, fontFamily: 'Archivo', fontSize: 48),
                         overflow: TextOverflow.fade,
                         maxLines: 1,
                         textAlign: TextAlign.left,

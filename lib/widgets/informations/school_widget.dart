@@ -14,7 +14,7 @@ class SchoolNameWidget extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(24),
-        color: green_3,
+        color: Theme.of(context).colorScheme.primaryContainer,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

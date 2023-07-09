@@ -18,8 +18,8 @@ class WebSection extends StatefulWidget {
 class _WebSectionState extends State<WebSection> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: green_1,
+    return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.tertiaryContainer,
       drawer: SideBar(),
       body: SafeArea(
         child: ResponsiveLayoutWidget(

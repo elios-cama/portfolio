@@ -32,7 +32,7 @@ class _DreamNoteState extends State<DreamNote> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: green_3,
+      backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       body: SafeArea(
         child: ResponsiveLayoutWidget(
           mobileWidget: ProjectDetailPageMobileLayoutWidget(

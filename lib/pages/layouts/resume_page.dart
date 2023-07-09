@@ -10,7 +10,7 @@ class ResumePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-        color: green_1,
+        color: Theme.of(context).colorScheme.tertiaryContainer,
         child: ResponsiveLayoutWidget(
           mobileWidget: Expanded(
             child: Padding(

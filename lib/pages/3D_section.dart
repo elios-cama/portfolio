@@ -15,8 +15,8 @@ class Section3D extends StatefulWidget {
 class _Section3DState extends State<Section3D> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: green_1,
+    return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.tertiaryContainer,
       drawer: SideBar(),
       body: SafeArea(
         child: ResponsiveLayoutWidget(

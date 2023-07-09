@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portflolio/routes/router.dart';
-import 'package:portflolio/theme/constants.dart';
+import 'package:portflolio/theme/color_theme.dart';
+
+
+final themeModeProvider = StateProvider<ThemeMode>((ref) {
+  return ThemeMode.dark;
+});
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,19 +22,19 @@ class MyApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final themMode = ref.watch(themeModeProvider);
     return MaterialApp.router(
       title: 'Portfolio',
       debugShowCheckedModeBanner: false,
-      // theme: ThemeData.dark().copyWith(
-      //   scaffoldBackgroundColor: bgColor,
-      //   textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
-      //       .apply(bodyColor: Colors.white),
-      //   canvasColor: secondaryColor,
-      // ),
       theme: ThemeData(
         useMaterial3: true,
-        colorSchemeSeed: Colors.green
+        colorScheme: lightColorScheme,
       ),
+      darkTheme: ThemeData(
+        useMaterial3: true,
+        colorScheme: darkColorScheme,
+      ),
+      themeMode: themMode,
       routerConfig: router,
     );
   }

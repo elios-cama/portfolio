@@ -27,7 +27,7 @@ class _LivingRoom extends State<LivingRoomPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: green_3,
+      backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       body: SafeArea(
         child: ResponsiveLayoutWidget(
           mobileWidget: ProjectDetailPageMobileLayoutWidget(

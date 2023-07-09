@@ -13,7 +13,7 @@ class NameWidget extends StatelessWidget {
       padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(24),
-          color: green_2,
+          color: Theme.of(context).colorScheme.secondaryContainer,
         ),
         child:  const Row(
           mainAxisAlignment: MainAxisAlignment.start,

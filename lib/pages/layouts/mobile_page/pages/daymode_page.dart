@@ -31,7 +31,7 @@ class _DaymodePageState extends State<DaymodePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: green_3,
+      backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       // appBar: AppBar(
       //   backgroundColor: green_3,
       //   leading: IconButton(

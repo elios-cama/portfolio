@@ -16,8 +16,8 @@ class MobileSection extends StatefulWidget {
 class _MobileSectionState extends State<MobileSection> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: green_1,
+    return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.tertiaryContainer,
       drawer: SideBar(),
       body: SafeArea(
         child: ResponsiveLayoutWidget(

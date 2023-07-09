@@ -4,6 +4,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 import '../../../routes/router.dart';
 import '../../../theme/constants.dart';
+
 class DesktopGridWidgetWeb extends StatefulWidget {
   const DesktopGridWidgetWeb({Key? key}) : super(key: key);
 
@@ -27,11 +28,11 @@ class _DesktopGridWidgetWeb extends State<DesktopGridWidgetWeb> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Flexible(
+            Flexible(
               flex: 2,
               child: AutoSizeText(
                 "Quel projet Web vous intéresse ? ",
-                style: TextStyle(color: green_5, fontFamily: 'Archivo', fontSize: 48),
+                style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Archivo', fontSize: 48),
                 overflow: TextOverflow.fade,
                 maxLines: 1,
                 textAlign: TextAlign.center,
@@ -41,7 +42,7 @@ class _DesktopGridWidgetWeb extends State<DesktopGridWidgetWeb> {
               flex: 10,
               child: CarouselSlider(
                 options: CarouselOptions(
-                  aspectRatio: 16/9,
+                  aspectRatio: 16 / 9,
                   enlargeCenterPage: true,
                   enableInfiniteScroll: false,
                   initialPage: 0,

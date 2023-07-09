@@ -13,7 +13,7 @@ class MapWidget extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(24),
-          color: green_4,
+          color: Theme.of(context).colorScheme.tertiary,
         ),
         child: Column(
           children: [
@@ -37,7 +37,7 @@ class MapWidget extends StatelessWidget {
             Expanded(
               flex: 4,
               child: Container(
-                color: green_4,
+                color: Theme.of(context).colorScheme.tertiary,
                 child: Image.asset('assets/images/map.png'),
               ),
             ),

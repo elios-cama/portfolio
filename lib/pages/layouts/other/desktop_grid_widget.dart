@@ -16,11 +16,11 @@ class DesktopGridWidgetOther extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Flexible(
+            Flexible(
               flex: 2,
               child: AutoSizeText(
                 "Rapport sur les voitures autonomes ",
-                style: TextStyle(color: green_5, fontFamily: 'Archivo', fontSize: 48),
+                style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Archivo', fontSize: 48),
                 overflow: TextOverflow.fade,
                 maxLines: 1,
                 textAlign: TextAlign.center,
@@ -28,7 +28,7 @@ class DesktopGridWidgetOther extends StatelessWidget {
             ),
             Flexible(
               flex: 12,
-              child: SizedBox(width: 800,child: SfPdfViewer.asset('assets/files/AC20.pdf')),
+              child: SizedBox(width: 800, child: SfPdfViewer.asset('assets/files/AC20.pdf')),
             ),
           ],
         ),

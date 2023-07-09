@@ -12,12 +12,12 @@ class ResumeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: ()=>router.go('/resume'),
+      onTap: () => router.go('/resume'),
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(24),
-          color: green_6,
+          color: Theme.of(context).colorScheme.primary,
         ),
         child: const Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -28,7 +28,7 @@ class ResumeWidget extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                   Text(
+                  Text(
                     'A propos',
                     textAlign: TextAlign.left,
                     style: TextStyle(color: Colors.white, fontSize: 16),
@@ -46,7 +46,7 @@ class ResumeWidget extends StatelessWidget {
             Spacer(),
             Expanded(
               flex: 7,
-              child:  AutoSizeText(
+              child: AutoSizeText(
                 "Bonjour ! J'ai 22 ans et je suis un étudiant passioné par les nouvelles technologies. Je suis actuellement en Erasmus à Polytechnique Milan et recherche un stage de fin d'études pour le printemps 2024. J'aimerai allier mes connaissances en développement mobile, modélisation 3D et en IA.\nCliquer sur la case pour voir mon CV",
                 style: TextStyle(color: Colors.white, fontSize: 22),
                 maxLines: 10, // Adjust this value based on your requirement
