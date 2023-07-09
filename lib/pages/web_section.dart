@@ -20,8 +20,8 @@ class _WebSectionState extends State<WebSection> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.tertiaryContainer,
-      drawer: SideBar(),
-      body: SafeArea(
+      drawer: const SideBar(),
+      body: const SafeArea(
         child: ResponsiveLayoutWidget(
           mobileWidget: DesktopGridWidgetWeb(),
           desktopWidget: DesktopGridWidgetWeb(),

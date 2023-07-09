@@ -14,7 +14,7 @@ class SideBar extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final pageIndex = ref.watch(sideBarIndexProvider);
     return Drawer(
-      backgroundColor: Theme.of(context).colorScheme.secondaryContainer,
+      backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       child: ListView(
         children: [
           DrawerHeader(
@@ -67,7 +67,9 @@ class SideBar extends ConsumerWidget {
                 },
                 icon: Icon(theme == ThemeMode.dark
                     ? Icons.light_mode
-                    : Icons.dark_mode));
+                    : Icons.dark_mode,color: theme == ThemeMode.dark
+                    ? Theme.of(context).colorScheme.primary
+                    : Theme.of(context).colorScheme.primary,));
           }),
         ],
       ),

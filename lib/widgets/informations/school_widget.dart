@@ -16,12 +16,12 @@ class SchoolNameWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(24),
         color: Theme.of(context).colorScheme.primaryContainer,
       ),
-      child: Row(
+      child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           AutoSizeText(
             "Ecole:",
-            style: TextStyle(color: Theme.of(context).colorScheme.secondary, fontSize: 16),
+            style: TextStyle(color: Colors.white, fontSize: 16),
           ),
           AutoSizeText(
             "UTBM",

@@ -17,14 +17,14 @@ class MapWidget extends StatelessWidget {
         ),
         child: Column(
           children: [
-            Expanded(
+            const Expanded(
               flex: 1,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   AutoSizeText(
                     "Basé à:",
-                    style: TextStyle(color: Theme.of(context).colorScheme.secondary, fontSize: 16),
+                    style: TextStyle(color: Colors.white, fontSize: 16),
                   ),
                   AutoSizeText(
                     "Belfort",

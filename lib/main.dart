@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portflolio/routes/router.dart';
 import 'package:portflolio/theme/color_theme.dart';
-
+import 'package:portflolio/theme/text_theme.dart';
 
 final themeModeProvider = StateProvider<ThemeMode>((ref) {
-  return ThemeMode.dark;
+  return ThemeMode.light;
 });
 
 void main() {
@@ -29,10 +29,12 @@ class MyApp extends ConsumerWidget {
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: lightColorScheme,
+        textTheme: textTheme,
       ),
       darkTheme: ThemeData(
         useMaterial3: true,
         colorScheme: darkColorScheme,
+        textTheme: textTheme,
       ),
       themeMode: themMode,
       routerConfig: router,
