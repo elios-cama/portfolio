@@ -21,16 +21,16 @@ class NetworksWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           IconCircleFull(
-            path: 'linkedin',
+            path: 'linkedin', url: 'https://www.linkedin.com/in/elios-cama/',
           ),
           IconCircleFull(
-            path: 'github',
+            path: 'github', url: 'https://github.com/elios-cama',
           ),
           IconCircle(
-            path: 'stackoverflow',
+            path: 'stackoverflow', url: 'https://stackoverflow.com/users/14163640/elios-cama',
           ),
           IconCircle(
-            path: 'gmail',
+            path: 'gmail', url: '',
           ),
         ],
       ),

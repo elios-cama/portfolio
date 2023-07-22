@@ -22,12 +22,13 @@ class HomePagePresentation extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.only(top: 24, left: 16, right: 8, bottom: 24),
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(24), color: Theme.of(context).colorScheme.primaryContainer),
-              child: const AutoSizeText(
-                "Bienvenue sur le portfolio d'Elios Cama",
-                style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
-                maxLines: 10, // Adjust this value based on your requirement
-                overflow: TextOverflow.fade,
-                textAlign: TextAlign.left,
+              child: const Center(
+                child: AutoSizeText(
+                  "Bienvenue sur le portfolio d'Elios Cama",
+                  style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
+                  overflow: TextOverflow.fade,
+                  textAlign: TextAlign.center,
+                ),
               ),
             ),
           ),

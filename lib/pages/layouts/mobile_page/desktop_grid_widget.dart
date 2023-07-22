@@ -46,6 +46,7 @@ class _DesktopGridWidgetMobileState extends State<DesktopGridWidgetMobile> {
               flex: 10,
               child: CarouselSlider(
                 options: CarouselOptions(
+                  pageSnapping: true,
                   aspectRatio: 1,
                   enlargeCenterPage: true,
                   enableInfiniteScroll: false,
