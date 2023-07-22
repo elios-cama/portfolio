@@ -40,25 +40,25 @@ class HomePagePresentation extends StatelessWidget {
             child: Row(
               children: [
                 ColoredCase(
-                  color: Theme.of(context).colorScheme.primaryContainer,
+                  color: Theme.of(context).colorScheme.tertiary,
                   number: '6+',
-                  description: "années d'expérience",
+                  description: "années\nd'expérience",
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 ColoredCase(
                   color: Theme.of(context).colorScheme.tertiary,
                   number: '15+',
-                  description: "projets scolaires",
+                  description: "projets\nscolaires",
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 ColoredCase(
-                  color: Theme.of(context).colorScheme.secondary,
+                  color: Theme.of(context).colorScheme.tertiary,
                   number: '10+',
-                  description: "projets personnels",
+                  description: "projets\npersonnels",
                 ),
               ],
             ),

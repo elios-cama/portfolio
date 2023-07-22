@@ -23,15 +23,34 @@ class ColoredCase extends StatelessWidget {
           color: color,
         ),
         child: Center(
-          child: AutoSizeText(
-            '$number\n$description',
-            textAlign: TextAlign.center,
-            maxLines: 2,
-            style:  const TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              fontFamily: 'Archivo',
-            ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              AutoSizeText(
+                number,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Archivo',
+                  fontSize: 32,
+                ), // Adjust the font size as needed
+                maxLines: 1,
+                presetFontSizes: [32, 28, 24, 20], // Font size will scale with the widget size
+              ),
+              const SizedBox(height: 8),
+              AutoSizeText(
+                description,
+                style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Archivo',
+                    fontSize: 16), // Adjust the font size as needed
+                maxLines: 2,
+                presetFontSizes: [16, 14, 12, 10], // Font size will scale with the widget size
+                textAlign: TextAlign.center,
+              ),
+            ],
           ),
         ),
       ),
