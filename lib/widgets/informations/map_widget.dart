@@ -12,7 +12,7 @@ class MapWidget extends StatelessWidget {
     return Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(24),
+          borderRadius: BorderRadius.circular(20),
           color: Theme.of(context).colorScheme.tertiary,
         ),
         child: Column(

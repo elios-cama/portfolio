@@ -16,9 +16,10 @@ class OtherSection extends StatefulWidget {
 class _OtherSectionState extends State<OtherSection> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      drawer: SideBar(),
-      body: SafeArea(
+    return  Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.tertiaryContainer,
+      drawer: const SideBar(),
+      body: const SafeArea(
         child: ResponsiveLayoutWidget(
           mobileWidget: DesktopGridWidgetOther(),
           desktopWidget: DesktopGridWidgetOther(),

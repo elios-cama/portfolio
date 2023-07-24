@@ -13,7 +13,7 @@ class SchoolNameWidget extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 16),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(20),
         color: Theme.of(context).colorScheme.primaryContainer,
       ),
       child: const Row(

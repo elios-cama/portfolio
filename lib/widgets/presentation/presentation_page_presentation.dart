@@ -21,7 +21,7 @@ class HomePagePresentation extends StatelessWidget {
             flex: 3,
             child: Container(
               padding: const EdgeInsets.only(top: 24, left: 16, right: 8, bottom: 24),
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(24), color: Theme.of(context).colorScheme.primaryContainer),
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Theme.of(context).colorScheme.primaryContainer),
               child: const Center(
                 child: AutoSizeText(
                   "Bienvenue sur le portfolio d'Elios Cama",
