@@ -40,7 +40,7 @@ class SideBar extends ConsumerWidget {
           ),
           const DrawerListTile(
             svgName: 'profile',
-            content: 'A propos de moi',
+            content: 'A propos',
             index: 0,
             path: '',
           ),

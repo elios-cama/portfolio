@@ -85,24 +85,25 @@ class _DesktopGridWidgetThreeDState extends State<DesktopGridWidgetThreeD> {
                                 ),
                                 if (isHovered)
                                   Positioned(
-                                    bottom: 4,
+                                    bottom: 0,
                                     left: 0,
                                     right: 0,
-                                    child: Center(
-                                      child: Container(
-                                        padding: const EdgeInsets.all(8),
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(24),
-                                          color: Colors.white,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: const BorderRadius.only(
+                                          bottomLeft: Radius.circular(20),
+                                          bottomRight: Radius.circular(20),
                                         ),
-                                        child: Text(
-                                          hoveredText.substring("/3D".length).toUpperCase(),
-                                          style: const TextStyle(
-                                            color: Colors.black,
-                                            fontSize: 24,
-                                            fontWeight: FontWeight.bold,
-                                          ),
+                                        color: Colors.white.withOpacity(.6),
+                                      ),
+                                      child: Text(
+                                        hoveredText.substring("/3D".length).toUpperCase(),
+                                        style: const TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 24,
+                                          fontWeight: FontWeight.bold,
                                         ),
+                                        textAlign: TextAlign.center,
                                       ),
                                     ),
                                   ),

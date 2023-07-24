@@ -83,24 +83,25 @@ class _DesktopGridWidgetWeb extends State<DesktopGridWidgetWeb> {
                                 ),
                                 if (isHovered)
                                   Positioned(
-                                    bottom: 4,
+                                    bottom: 0,
                                     left: 0,
                                     right: 0,
-                                    child: Center(
-                                      child: Container(
-                                        padding: const EdgeInsets.all(8),
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(24),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: const BorderRadius.only(
+                                          bottomLeft: Radius.circular(20),
+                                          bottomRight: Radius.circular(20),
+                                        ),
+                                        color: Colors.white.withOpacity(.3),
+                                      ),
+                                      child: Text(
+                                        hoveredText.substring("/web".length).toUpperCase(),
+                                        style: const TextStyle(
                                           color: Colors.white,
+                                          fontSize: 24,
+                                          fontWeight: FontWeight.bold,
                                         ),
-                                        child: Text(
-                                          hoveredText.substring("/web".length).toUpperCase(),
-                                          style: const TextStyle(
-                                            color: Colors.black,
-                                            fontSize: 24,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
+                                        textAlign: TextAlign.center,
                                       ),
                                     ),
                                   ),
