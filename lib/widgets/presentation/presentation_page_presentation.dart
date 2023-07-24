@@ -24,10 +24,10 @@ class HomePagePresentation extends StatelessWidget {
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Theme.of(context).colorScheme.primaryContainer),
               child: const Center(
                 child: AutoSizeText(
-                  "Bienvenue sur le portfolio d'Elios Cama",
+                  "Bienvenue sur mon Portfolio",
                   style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
                   overflow: TextOverflow.fade,
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.left,
                 ),
               ),
             ),
