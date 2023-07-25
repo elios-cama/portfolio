@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:portflolio/theme/constants.dart';
 import 'package:portflolio/widgets/carousel/portfolio_carousel_image_widget.dart';
@@ -26,19 +27,17 @@ class PortfolioCarousel extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                AutoSizeText(
                   "Mobile Portfolio",
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.white,
-                  ),
+                  style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 36),
+                  overflow: TextOverflow.fade,
+                  textAlign: TextAlign.center,
                 ),
-                Text(
+                AutoSizeText(
                   "Voir tout",
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.white,
-                  ),
+                  style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 36),
+                  overflow: TextOverflow.fade,
+                  textAlign: TextAlign.center,
                 ),
               ],
             ),
@@ -70,7 +69,7 @@ class PortfolioCarousel extends StatelessWidget {
               ],
             ),
           ),
-          const Spacer(),
+          Spacer(),
         ],
       ),
     );

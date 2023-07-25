@@ -24,11 +24,15 @@ class MapWidget extends StatelessWidget {
                 children: [
                   AutoSizeText(
                     "Basé à:",
-                    style: TextStyle(color: Colors.white, fontSize: 16),
+                    style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 24),
+                    overflow: TextOverflow.fade,
+                    textAlign: TextAlign.center,
                   ),
                   AutoSizeText(
                     "Belfort",
-                    style: TextStyle(color: Colors.white, fontSize: 16),
+                    style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 24),
+                    overflow: TextOverflow.fade,
+                    textAlign: TextAlign.center,
                   ),
                 ],
               ),

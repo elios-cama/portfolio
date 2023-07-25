@@ -90,7 +90,7 @@ class SideBar extends ConsumerWidget {
               title: AutoSizeText(
                 "Changer de thème",
                 maxLines: 2,
-                style: TextStyle(color: Theme.of(context).colorScheme.primary, fontSize: 18),
+                style: TextStyle(color: Theme.of(context).colorScheme.primary, fontSize: 18, fontFamily: 'Archivo'),
               ),
             );
           }),

@@ -25,7 +25,7 @@ class HomePagePresentation extends StatelessWidget {
               child: const Center(
                 child: AutoSizeText(
                   "Bienvenue sur mon Portfolio",
-                  style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
+                  style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 56),
                   overflow: TextOverflow.fade,
                   textAlign: TextAlign.left,
                 ),

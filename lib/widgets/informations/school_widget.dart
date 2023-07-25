@@ -21,11 +21,15 @@ class SchoolNameWidget extends StatelessWidget {
         children: [
           AutoSizeText(
             "Ecole:",
-            style: TextStyle(color: Colors.white, fontSize: 16),
+            style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 20),
+            overflow: TextOverflow.fade,
+            textAlign: TextAlign.center,
           ),
           AutoSizeText(
             "UTBM",
-            style: TextStyle(color: Colors.white, fontSize: 16),
+            style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 24),
+            overflow: TextOverflow.fade,
+            textAlign: TextAlign.center,
           ),
         ],
       ),
