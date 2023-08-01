@@ -36,7 +36,7 @@ class _HallePage extends State<HallePage> {
             svgIconPaths: svgIconPaths,
             ratio: 1.2,
             title: 'Halle Caoutchouc',
-            description: "Dans le cadre d'un projet scolaire sur le patrimoine industriel en France, j'ai proposé une maquette 3D du bâtiment que j'étudiais avec un projet de réhabilitation. J'ai tout d'abord modélisé la Halle Caoutchouc avec son architecture réelle, puis ajouter des extensions correspondant à mon projet de réhabilitation. Le travail est fait avec Blender. ",
+            description: "Dans le cadre d'un projet scolaire sur le patrimoine industriel en France, j'ai proposé une maquette 3D du bâtiment que j'étudiais, avec un projet de réhabilitation. J'ai tout d'abord modélisé la Halle Caoutchouc avec son architecture réelle, puis ajouter des extensions correspondant à mon projet de réhabilitation. Le travail est fait avec Blender. ",
           ),
           desktopWidget: ProjectDetailPageListLayoutWidget(
             imagePaths: imagePaths,
@@ -44,7 +44,7 @@ class _HallePage extends State<HallePage> {
             title: 'Halle Caoutchouc',
             ratio: 16 / 9,
             description:
-                "Dans le cadre d'un projet scolaire sur le patrimoine industriel en France, j'ai proposé une maquette 3D du bâtiment que j'étudiais avec un projet de réhabilitation. J'ai tout d'abord modélisé la Halle Caoutchouc avec son architecture réelle, puis ajouter des extensions correspondant à mon projet de réhabilitation. Le travail est fait avec Blender. ",
+                "Dans le cadre d'un projet scolaire sur le patrimoine industriel en France, j'ai proposé une maquette 3D du bâtiment que j'étudiais, avec un projet de réhabilitation. J'ai tout d'abord modélisé la Halle Caoutchouc avec son architecture réelle, puis ajouter des extensions correspondant à mon projet de réhabilitation. Le travail est fait avec Blender. ",
           ),
         ),
       ),

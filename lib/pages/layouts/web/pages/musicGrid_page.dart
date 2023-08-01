@@ -41,14 +41,14 @@ class _MusicGridPage extends State<MusicGridPage> {
               ratio: 21 / 9,
               title: 'Music Grid',
               description:
-                  "Music Grid est un projet personnel à l'initiative d'une discussion avec mon frère. Passionés de musique nous voulions avoir un accès aux statistiques de ce que nous écoutions. J'ai donc développer un projet web avec Django. Le site permet à l'utilisateur de se connecter à l'API de Deezer et ensuite de générer une grille des 25 pochettes d'albums les plus écoutés. "),
+                  "Music Grid est un projet personnel à l'initiative d'une discussion avec mon frère. Passionés de musique nous voulions avoir un accès aux statistiques de ce que nous écoutions. J'ai donc développé un projet web avec Django. Le site permet à l'utilisateur de se connecter à l'API de Deezer et ensuite de générer une grille des 25 pochettes d'albums les plus écoutés. "),
           desktopWidget: ProjectDetailPageListLayoutWidget(
               imagePaths: imagePaths,
               svgIconPaths: svgIconPaths,
               title: 'Music Grid',
               ratio: 21 / 9,
               description:
-                  "Music Grid est un projet personnel à l'initiative d'une discussion avec mon frère. Passionés de musique nous voulions avoir un accès aux statistiques de ce que nous écoutions. J'ai donc développer un projet web avec Django. Le site permet à l'utilisateur de se connecter à l'API de Deezer et ensuite de générer une grille des 25 pochettes d'albums les plus écoutés. "),
+                  "Music Grid est un projet personnel à l'initiative d'une discussion avec mon frère. Passionés de musique nous voulions avoir un accès aux statistiques de ce que nous écoutions. J'ai donc développé un projet web avec Django. Le site permet à l'utilisateur de se connecter à l'API de Deezer et ensuite de générer une grille des 25 pochettes d'albums les plus écoutés. "),
         ),
       ),
     );

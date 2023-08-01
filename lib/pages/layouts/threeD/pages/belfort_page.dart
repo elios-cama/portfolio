@@ -35,14 +35,14 @@ class _BelfortPageState extends State<BelfortPage> {
               ratio: 1.2,
               title: 'Belfort',
               description:
-                  "Dans le cadre d'un projet scolaire dans un groupe de trois, j'ai réalisé la carte en 3D de la zone de l'UTBM. Le but du projet était de réaliser un simulateur immersif de trajet en vélo dans Belfort avec son trafic. Nous avons donc réaliser une application en réalité virtuelle dans la zone de notre école avec une gestion de trafic et de météo. La carte a été réalisée avec Blender en respectant les mesures, les formes des bâtiments ainsi que les textures réelles. "),
+                  "Dans le cadre d'un projet scolaire dans un groupe de trois, j'ai réalisé la carte en 3D de la zone de l'UTBM. Le but du projet était de réaliser un simulateur immersif de trajet en vélo dans Belfort avec son trafic. Nous avons donc réalisé une application en réalité virtuelle dans la zone de notre école avec une gestion de trafic et de météo. La carte a été réalisée avec Blender en respectant les mesures, les formes des bâtiments ainsi que les textures réelles. "),
           desktopWidget: ProjectDetailPageListLayoutWidget(
               imagePaths: imagePaths,
               svgIconPaths: svgIconPaths,
               ratio: 16 / 9,
               title: 'Belfort',
               description:
-                  "Dans le cadre d'un projet scolaire dans un groupe de trois, j'ai réalisé la carte en 3D de la zone de l'UTBM. Le but du projet était de réaliser un simulateur immersif de trajet en vélo dans Belfort avec son trafic. Nous avons donc réaliser une application en réalité virtuelle dans la zone de notre école avec une gestion de trafic et de météo. La carte a été réalisée avec Blender en respectant les mesures, les formes des bâtiments ainsi que les textures réelles. "),
+                  "Dans le cadre d'un projet scolaire dans un groupe de trois, j'ai réalisé la carte en 3D de la zone de l'UTBM. Le but du projet était de réaliser un simulateur immersif de trajet en vélo dans Belfort avec son trafic. Nous avons donc réalisé une application en réalité virtuelle dans la zone de notre école avec une gestion de trafic et de météo. La carte a été réalisée avec Blender en respectant les mesures, les formes des bâtiments ainsi que les textures réelles. "),
         ),
       ),
     );

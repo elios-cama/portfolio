@@ -47,7 +47,7 @@ class ResumeWidget extends StatelessWidget {
           const Expanded(
             flex: 7,
             child: AutoSizeText(
-              "Bonjour ! J'ai 22 ans et je suis un étudiant passioné par les nouvelles technologies. Je suis actuellement en Erasmus à Polytechnique Milan et recherche un stage de fin d'études pour le printemps 2024. J'aimerai allier mes connaissances en développement mobile, modélisation 3D et en IA.",
+              "Bonjour ! J'ai 22 ans et je suis un étudiant passionné par les nouvelles technologies. Je suis actuellement en Erasmus à Polytechnique Milan et recherche un stage de fin d'études pour le printemps 2024. J'aimerais allier mes connaissances en développement mobile, modélisation 3D et en IA.",
               style: TextStyle(
                   color: Colors.white, fontSize: 20),
               maxLines: 10, // Adjust this value based on your requirement

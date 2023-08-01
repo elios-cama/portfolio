@@ -36,7 +36,7 @@ class _LivingRoom extends State<LivingRoomPage> {
             ratio: 1.2,
             title: 'Le salon',
             description:
-                "Le projet du salon est un projet scolaire dans le cadre de mon master Mondes virtuels. Le but était de modéliser un salon simple avec Blender. J'ai donc créer une jolie pièce à vivre avec une table, de la vaisselle et des fruits. J'ai aussi modélisé un coin salon avec un canapé, un tapis et des plantes. J'ai travaillé les matériaux, les textures et les lumières afin d'avoir un rendu le plus réaliste possible. ",
+                "Le projet du salon est un projet scolaire dans le cadre de mon master Mondes virtuels. Le but était de modéliser un salon simple avec Blender. J'ai donc créé une jolie pièce à vivre avec une table, de la vaisselle et des fruits. J'ai aussi modélisé un coin salon avec un canapé, un tapis et des plantes. J'ai travaillé les matériaux, les textures et les lumières afin d'avoir un rendu le plus réaliste possible. ",
           ),
           desktopWidget: ProjectDetailPageListLayoutWidget(
             imagePaths: imagePaths,
@@ -44,7 +44,7 @@ class _LivingRoom extends State<LivingRoomPage> {
             title: 'Le salon',
             ratio: 16 / 9,
             description:
-                "Le projet du salon est un projet scolaire dans le cadre de mon master Mondes virtuels. Le but était de modéliser un salon simple avec Blender. J'ai donc créer une jolie pièce à vivre avec une table, de la vaisselle et des fruits. J'ai aussi modélisé un coin salon avec un canapé, un tapis et des plantes. J'ai travaillé les matériaux, les textures et les lumières afin d'avoir un rendu le plus réaliste possible. ",
+                "Le projet du salon est un projet scolaire dans le cadre de mon master Mondes virtuels. Le but était de modéliser un salon simple avec Blender. J'ai donc créé une jolie pièce à vivre avec une table, de la vaisselle et des fruits. J'ai aussi modélisé un coin salon avec un canapé, un tapis et des plantes. J'ai travaillé les matériaux, les textures et les lumières afin d'avoir un rendu le plus réaliste possible. ",
           ),
         ),
       ),
