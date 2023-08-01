@@ -19,11 +19,13 @@ class CarouselImageWidget extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(24),
-            image: DecorationImage(
-              image: AssetImage('assets/images/mobile/$image_path'),
-              fit: BoxFit.fill,
-            ),
+            color: Theme.of(context).colorScheme.primaryContainer,
           ),
+          child: Center(
+              child: Padding(
+                padding: const EdgeInsets.all(24.0),
+                child: Image.asset('assets/images/mobile/$image_path',fit: BoxFit.scaleDown,),
+              )),
         ),
       ),
     );
