@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:portflolio/theme/constants.dart';
 import 'package:portflolio/widgets/informations/picture_case.dart';
-import 'package:portflolio/widgets/informations/school_widget.dart';
-import 'map_widget.dart';
+import 'city_name_widget.dart';
+import 'school_widget.dart';
 import 'name_widget.dart';
 import 'network_widget.dart';
 
@@ -64,14 +64,14 @@ class InfoColumnWidget extends StatelessWidget {
       children: [
         Expanded(
           flex: 1,
-          child: SchoolNameWidget(),
+          child: CityNameWidget(),
         ),
         SizedBox(
           height: 8,
         ),
         Expanded(
           flex: 3,
-          child: MapWidget(),
+          child: SchoolWidget(),
         ),
         SizedBox(
           height: 8,

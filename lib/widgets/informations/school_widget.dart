@@ -1,38 +1,50 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
-import '../../theme/constants.dart';
-
-class SchoolNameWidget extends StatelessWidget {
-  const SchoolNameWidget({
+class SchoolWidget extends StatelessWidget {
+  const SchoolWidget({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 16),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        color: Theme.of(context).colorScheme.primaryContainer,
-      ),
-      child: const Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          AutoSizeText(
-            "Ecole:",
-            style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 20),
-            overflow: TextOverflow.fade,
-            textAlign: TextAlign.center,
-          ),
-          AutoSizeText(
-            "UTBM",
-            style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 24),
-            overflow: TextOverflow.fade,
-            textAlign: TextAlign.center,
-          ),
-        ],
-      ),
-    );
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Theme.of(context).colorScheme.tertiary,
+        ),
+        child: Column(
+          children: [
+            const Expanded(
+              flex: 2,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  AutoSizeText(
+                    "Ecole :",
+                    style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 20),
+                    overflow: TextOverflow.fade,
+                    textAlign: TextAlign.center,
+                  ),
+                  AutoSizeText(
+                    "UTBM",
+                    style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 20),
+                    overflow: TextOverflow.fade,
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 8),
+            Expanded(
+              flex: 5,
+              child: Container(
+                color: Theme.of(context).colorScheme.tertiary,
+                child: Image.asset('assets/images/map.png'),
+              ),
+            ),
+          ],
+        ));
   }
 }
