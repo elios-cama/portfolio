@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 final textTheme = TextTheme(
-  displayLarge: GoogleFonts.inter(
+  displayLarge: GoogleFonts.raleway(
     fontWeight: FontWeight.w400,
     fontSize: 57,
     height: 64 / 57,

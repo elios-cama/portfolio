@@ -21,7 +21,7 @@ class IconCircle extends StatelessWidget {
       },
       child: Container(
         padding: const EdgeInsets.all(4),
-        decoration: BoxDecoration(color: Theme.of(context).colorScheme.secondary, shape: BoxShape.circle),
+        decoration: BoxDecoration(color: Theme.of(context).colorScheme.primary, shape: BoxShape.circle),
         child: FittedBox(
           fit: BoxFit.contain,
           child: Center(
