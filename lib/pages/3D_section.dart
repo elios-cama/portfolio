@@ -17,8 +17,8 @@ class _Section3DState extends State<Section3D> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.tertiaryContainer,
-      drawer: SideBar(),
-      body: SafeArea(
+      drawer: const SideBar(),
+      body: const SafeArea(
         child: ResponsiveLayoutWidget(
           mobileWidget: DesktopGridWidgetThreeD(),
           desktopWidget: DesktopGridWidgetThreeD(),

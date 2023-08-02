@@ -77,11 +77,11 @@ class SideBar extends ConsumerWidget {
               },
               horizontalTitleGap: 0.0,
               leading: SvgPicture.asset(
-                theme == ThemeMode.dark ? 'assets/svg/leaf.svg' : 'assets/svg/drop.svg',
+                theme == ThemeMode.dark ? 'assets/svg/olive.svg' : 'assets/svg/coffee.svg',
                 colorFilter: ColorFilter.mode(
                     theme == ThemeMode.dark
-                        ? Theme.of(context).colorScheme.primary
-                        : Theme.of(context).colorScheme.primary,
+                        ? Theme.of(context).colorScheme.tertiary
+                        : Theme.of(context).colorScheme.tertiary,
                     BlendMode.srcIn),
                 height: 16,
                 width: 16,
@@ -90,7 +90,7 @@ class SideBar extends ConsumerWidget {
               title: AutoSizeText(
                 "Changer de thème",
                 maxLines: 2,
-                style: TextStyle(color: Theme.of(context).colorScheme.primary, fontSize: 18, fontFamily: 'Archivo'),
+                style: TextStyle(color: Theme.of(context).colorScheme.tertiary, fontSize: 18, fontFamily: 'Archivo'),
               ),
             );
           }),

@@ -37,7 +37,10 @@ class ProjectDetailPageListLayoutWidget extends StatelessWidget {
                 alignment: Alignment.center,
                 child: AutoSizeText(
                   title,
-                  style: const TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
+                  style: TextStyle(
+                      color: Theme.of(context).colorScheme.primary,
+                      fontFamily: 'Archivo',
+                      fontSize: 48),
                   overflow: TextOverflow.fade,
                   maxLines: 1,
                 ),
@@ -75,11 +78,14 @@ class ProjectDetailPageListLayoutWidget extends StatelessWidget {
               ),
             ),
             const Spacer(),
-            const Expanded(
+            Expanded(
               flex: 1,
               child: AutoSizeText(
                 'Technologies utilisées',
-                style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
+                style: TextStyle(
+                    color: Theme.of(context).colorScheme.inversePrimary,
+                    fontFamily: 'Archivo',
+                    fontSize: 48),
                 overflow: TextOverflow.fade,
                 maxLines: 1,
                 textAlign: TextAlign.left,
@@ -89,11 +95,14 @@ class ProjectDetailPageListLayoutWidget extends StatelessWidget {
             const Spacer(),
             TechnoIconsWidget(svgIconPaths: svgIconPaths),
             const Spacer(),
-            const Expanded(
+            Expanded(
               flex: 1,
               child: AutoSizeText(
                 'Résumé du projet',
-                style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
+                style: TextStyle(
+                    color: Theme.of(context).colorScheme.inversePrimary,
+                    fontFamily: 'Archivo',
+                    fontSize: 48),
                 overflow: TextOverflow.fade,
                 maxLines: 1,
                 textAlign: TextAlign.left,
@@ -105,8 +114,8 @@ class ProjectDetailPageListLayoutWidget extends StatelessWidget {
               flex: 4,
               child: AutoSizeText(
                 description,
-                style: const TextStyle(
-                  color: Colors.white,
+                style: TextStyle(
+                  color: Theme.of(context).colorScheme.primaryContainer,
                   fontFamily: 'Archivo',
                 ),
                 overflow: TextOverflow.fade,

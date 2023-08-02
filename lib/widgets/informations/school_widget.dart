@@ -16,20 +16,20 @@ class SchoolWidget extends StatelessWidget {
         ),
         child: Column(
           children: [
-            const Expanded(
+             Expanded(
               flex: 2,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   AutoSizeText(
                     "Ecole :",
-                    style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 20),
+                    style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Archivo', fontSize: 20),
                     overflow: TextOverflow.fade,
                     textAlign: TextAlign.center,
                   ),
                   AutoSizeText(
                     "UTBM",
-                    style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 20),
+                    style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Archivo', fontSize: 20),
                     overflow: TextOverflow.fade,
                     textAlign: TextAlign.center,
                   ),

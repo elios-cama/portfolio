@@ -9,7 +9,8 @@ class DesktopGridWidgetThreeD extends StatefulWidget {
   const DesktopGridWidgetThreeD({Key? key}) : super(key: key);
 
   @override
-  State<DesktopGridWidgetThreeD> createState() => _DesktopGridWidgetThreeDState();
+  State<DesktopGridWidgetThreeD> createState() =>
+      _DesktopGridWidgetThreeDState();
 }
 
 class _DesktopGridWidgetThreeDState extends State<DesktopGridWidgetThreeD> {
@@ -34,7 +35,10 @@ class _DesktopGridWidgetThreeDState extends State<DesktopGridWidgetThreeD> {
               flex: 2,
               child: AutoSizeText(
                 "Quel projet 3D vous intéresse ? ",
-                style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Archivo', fontSize: 48),
+                style: TextStyle(
+                    color: Theme.of(context).colorScheme.secondary,
+                    fontFamily: 'Archivo',
+                    fontSize: 48),
                 overflow: TextOverflow.fade,
                 maxLines: 1,
                 textAlign: TextAlign.center,
@@ -60,7 +64,8 @@ class _DesktopGridWidgetThreeDState extends State<DesktopGridWidgetThreeD> {
                   final hoveredText = entry.value;
                   return Builder(
                     builder: (BuildContext context) {
-                      bool isHovered = _currentCardIndex == images.keys.toList().indexOf(imagePath);
+                      bool isHovered = _currentCardIndex ==
+                          images.keys.toList().indexOf(imagePath);
                       return InkWell(
                         onTap: () {
                           router.go('/${entry.value}');
@@ -69,7 +74,8 @@ class _DesktopGridWidgetThreeDState extends State<DesktopGridWidgetThreeD> {
                           duration: const Duration(milliseconds: 200),
                           opacity: isHovered ? 1.0 : 0.3,
                           child: Container(
-                            margin: const EdgeInsets.symmetric(horizontal: 10.0),
+                            margin:
+                                const EdgeInsets.symmetric(horizontal: 10.0),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20.0),
                             ),
@@ -97,7 +103,9 @@ class _DesktopGridWidgetThreeDState extends State<DesktopGridWidgetThreeD> {
                                         color: Colors.white.withOpacity(.6),
                                       ),
                                       child: Text(
-                                        hoveredText.substring("/3D".length).toUpperCase(),
+                                        hoveredText
+                                            .substring("/3D".length)
+                                            .toUpperCase(),
                                         style: const TextStyle(
                                           color: Colors.black,
                                           fontSize: 24,

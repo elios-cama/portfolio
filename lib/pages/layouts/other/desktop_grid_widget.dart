@@ -22,7 +22,7 @@ class DesktopGridWidgetOther extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 16),
                 child: AutoSizeText(
                   "Rapport sur les voitures autonomes ",
-                  style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Archivo', fontSize: 48),
+                  style: TextStyle(color: Theme.of(context).colorScheme.secondary, fontFamily: 'Archivo', fontSize: 48),
                   overflow: TextOverflow.fade,
                   maxLines: 1,
                   textAlign: TextAlign.center,

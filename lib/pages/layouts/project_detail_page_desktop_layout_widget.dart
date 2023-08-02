@@ -74,7 +74,10 @@ class ProjectDetailPageDesktopLayoutWidget extends StatelessWidget {
                         alignment: Alignment.topLeft,
                         child: AutoSizeText(
                           title,
-                          style: const TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
+                          style: TextStyle(
+                              color: Theme.of(context).colorScheme.primary,
+                              fontFamily: 'Archivo',
+                              fontSize: 48),
                           overflow: TextOverflow.fade,
                           maxLines: 1,
                         ),
@@ -86,7 +89,9 @@ class ProjectDetailPageDesktopLayoutWidget extends StatelessWidget {
                       child: AutoSizeText(
                         'Technologies utilisées',
                         style: TextStyle(
-                            color: Theme.of(context).colorScheme.primary, fontFamily: 'Archivo', fontSize: 48),
+                            color: Theme.of(context).colorScheme.inversePrimary,
+                            fontFamily: 'Archivo',
+                            fontSize: 48),
                         overflow: TextOverflow.fade,
                         maxLines: 1,
                         textAlign: TextAlign.left,
@@ -101,7 +106,9 @@ class ProjectDetailPageDesktopLayoutWidget extends StatelessWidget {
                       child: AutoSizeText(
                         'Résumé du projet',
                         style: TextStyle(
-                            color: Theme.of(context).colorScheme.primary, fontFamily: 'Archivo', fontSize: 48),
+                            color: Theme.of(context).colorScheme.inversePrimary,
+                            fontFamily: 'Archivo',
+                            fontSize: 48),
                         overflow: TextOverflow.fade,
                         maxLines: 1,
                         textAlign: TextAlign.left,
@@ -113,8 +120,9 @@ class ProjectDetailPageDesktopLayoutWidget extends StatelessWidget {
                       flex: 4,
                       child: AutoSizeText(
                         description,
-                        style: const TextStyle(
-                          color: Colors.white,
+                        style: TextStyle(
+                          color:
+                              Theme.of(context).colorScheme.primaryContainer,
                           fontFamily: 'Archivo',
                         ),
                         overflow: TextOverflow.fade,

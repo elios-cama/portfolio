@@ -26,7 +26,7 @@ class _BelfortPageState extends State<BelfortPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.primaryContainer,
+      backgroundColor: Theme.of(context).colorScheme.tertiaryContainer,
       body: SafeArea(
         child: ResponsiveLayoutWidget(
           mobileWidget: ProjectDetailPageMobileLayoutWidget(

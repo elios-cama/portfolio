@@ -15,15 +15,15 @@ class NetworksWidget extends StatelessWidget {
       padding: const EdgeInsets.all(4),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: Theme.of(context).colorScheme.secondaryContainer,
+        color: Theme.of(context).colorScheme.tertiary,
       ),
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          IconCircleFull(
+          IconCircle(
             path: 'linkedin', url: 'https://www.linkedin.com/in/elios-cama/',
           ),
-          IconCircleFull(
+          IconCircle(
             path: 'github', url: 'https://github.com/elios-cama',
           ),
           IconCircle(

@@ -37,7 +37,10 @@ class ProjectDetailPageMobileLayoutWidget extends StatelessWidget {
                 alignment: Alignment.center,
                 child: AutoSizeText(
                   title,
-                  style: const TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
+                  style: TextStyle(
+                      color: Theme.of(context).colorScheme.primary,
+                      fontFamily: 'Archivo',
+                      fontSize: 48),
                   overflow: TextOverflow.fade,
                   maxLines: 1,
                 ),
@@ -78,9 +81,12 @@ class ProjectDetailPageMobileLayoutWidget extends StatelessWidget {
               const SizedBox(
                 height: defaultPadding,
               ),
-              const AutoSizeText(
+              AutoSizeText(
                 'Technologies utilisées',
-                style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
+                style: TextStyle(
+                    color: Theme.of(context).colorScheme.inversePrimary,
+                    fontFamily: 'Archivo',
+                    fontSize: 48),
                 overflow: TextOverflow.fade,
                 maxLines: 1,
                 textAlign: TextAlign.left,
@@ -93,11 +99,15 @@ class ProjectDetailPageMobileLayoutWidget extends StatelessWidget {
               const SizedBox(
                 height: defaultPadding,
               ),
-              const AutoSizeText(
+              AutoSizeText(
                 'Résumé du projet',
-                style: TextStyle(color: Colors.white, fontFamily: 'Archivo', fontSize: 48),
+                style: TextStyle(
+                    color: Theme.of(context).colorScheme.inversePrimary,
+                    fontFamily: 'Archivo',
+                    fontSize: 48),
                 overflow: TextOverflow.fade,
                 maxLines: 1,
+                maxFontSize: 40,
                 textAlign: TextAlign.left,
                 // textAlign: TextAlign.center,
               ),
@@ -106,8 +116,8 @@ class ProjectDetailPageMobileLayoutWidget extends StatelessWidget {
               ),
               AutoSizeText(
                 description,
-                style: const TextStyle(
-                  color: Colors.white,
+                style: TextStyle(
+                  color: Theme.of(context).colorScheme.primaryContainer,
                   fontFamily: 'Archivo',
                 ),
                 overflow: TextOverflow.fade,

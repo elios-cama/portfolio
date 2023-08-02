@@ -61,6 +61,7 @@ class ResumeWidget extends StatelessWidget {
               alignment: Alignment.bottomLeft,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
+                  backgroundColor: Theme.of(context).colorScheme.tertiary,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),

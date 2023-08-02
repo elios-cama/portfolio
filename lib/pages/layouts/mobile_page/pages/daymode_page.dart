@@ -31,14 +31,7 @@ class _DaymodePageState extends State<DaymodePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.primaryContainer,
-      // appBar: AppBar(
-      //   backgroundColor: green_3,
-      //   leading: IconButton(
-      //     onPressed: () => router.go('/mobile'),
-      //     icon: const Icon(Icons.arrow_back,color: Colors.white,),
-      //   ),
-      // ),
+      backgroundColor: Theme.of(context).colorScheme.tertiaryContainer,
       body: SafeArea(
         child: ResponsiveLayoutWidget(
           mobileWidget: ProjectDetailPageMobileLayoutWidget(

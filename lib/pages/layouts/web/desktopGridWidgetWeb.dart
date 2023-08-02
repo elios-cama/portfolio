@@ -32,7 +32,7 @@ class _DesktopGridWidgetWeb extends State<DesktopGridWidgetWeb> {
               flex: 2,
               child: AutoSizeText(
                 "Quel projet Web vous intéresse ? ",
-                style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Archivo', fontSize: 48),
+                style: TextStyle(color: Theme.of(context).colorScheme.secondary, fontFamily: 'Archivo', fontSize: 48),
                 overflow: TextOverflow.fade,
                 maxLines: 1,
                 textAlign: TextAlign.center,

@@ -27,7 +27,7 @@ class DrawerListTile extends ConsumerWidget {
       horizontalTitleGap: 0.0,
       leading: SvgPicture.asset(
         'assets/svg/$svgName.svg',
-        colorFilter: ColorFilter.mode(index == selectedIndex ? Colors.white : Theme.of(context).colorScheme.primary, BlendMode.srcIn),
+        colorFilter: ColorFilter.mode(index == selectedIndex ? Colors.white : Theme.of(context).colorScheme.tertiary, BlendMode.srcIn),
         height: 16,
         width: 16,
         fit: BoxFit.scaleDown,
@@ -35,7 +35,7 @@ class DrawerListTile extends ConsumerWidget {
       title: AutoSizeText(
         content,
         maxLines: 2,
-        style: TextStyle(color: index == selectedIndex ? Colors.white : Theme.of(context).colorScheme.primary, fontSize: 18,fontFamily: 'Archivo'),
+        style: TextStyle(color: index == selectedIndex ? Colors.white : Theme.of(context).colorScheme.tertiary, fontSize: 18,fontFamily: 'Archivo'),
       ),
     );
   }
